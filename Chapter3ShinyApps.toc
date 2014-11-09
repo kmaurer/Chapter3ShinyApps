@@ -1,15 +1,15 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{2}
-\contentsline {section}{\numberline {2}Shiny Database Sampler}{2}
-\contentsline {subsection}{\numberline {2.1}Layout and Functionality}{2}
+\contentsline {section}{\numberline {2}Shiny Database Sampler}{3}
+\contentsline {subsection}{\numberline {2.1}Layout and Functionality}{3}
 \contentsline {subsection}{\numberline {2.2}Applications}{3}
-\contentsline {subsection}{\numberline {2.3}Student Response Survey Following Lab Application}{3}
-\contentsline {subsubsection}{\numberline {2.3.1}Lab Overview}{3}
+\contentsline {subsection}{\numberline {2.3}Student Response Survey Following Lab Application}{4}
+\contentsline {subsubsection}{\numberline {2.3.1}Lab Overview}{4}
 \contentsline {subsubsection}{\numberline {2.3.2}Survey Description}{4}
 \contentsline {subsubsection}{\numberline {2.3.3}Assessment of Internal Consistency for Item Topic Sets}{5}
-\contentsline {subsubsection}{\numberline {2.3.4}Assessment of Polarity Issues}{6}
-\contentsline {subsubsection}{\numberline {2.3.5}Assessment of Orthogonality}{7}
-\contentsline {subsubsection}{\numberline {2.3.6}Survey Assessment Results}{8}
+\contentsline {subsubsection}{\numberline {2.3.4}Assessment of Polarity Issues}{7}
+\contentsline {subsubsection}{\numberline {2.3.5}Assessment of Orthogonality}{8}
+\contentsline {subsubsection}{\numberline {2.3.6}Survey Assessment Results}{9}
 \contentsline {section}{\numberline {3}Shiny Database Aggregator}{10}
 \contentsline {subsection}{\numberline {3.1}Layout and Functionality}{10}
 \contentsline {subsection}{\numberline {3.2}Applications}{10}

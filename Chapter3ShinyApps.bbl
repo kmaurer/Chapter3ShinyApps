@@ -1,0 +1,76 @@
+\begin{thebibliography}{15}
+\newcommand{\enquote}[1]{``#1''}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Aliaga et~al.(2005)Aliaga, Cobb, Cuff, Garfield, Gould, Lock, Moore,
+  Rossman, Stephenson, Utts, Velleman, and Witmer}]{GAISEcollege}
+Aliaga, M., Cobb, G., Cuff, C., Garfield, J., Gould, R., Lock, R., Moore, T.,
+  Rossman, A., Stephenson, B., Utts, J., Velleman, P., and Witmer, J. (2005),
+  \enquote{Guidelines for Assessment and Instruction in Statistics Education:
+  College Report,} .
+
+\bibitem[{{CAUSE}(2014)}]{CAUSErepo}
+{CAUSE} (2014), \enquote{Consortium for the Advancement of Undergraduate
+  Statistics Education Resourses,} \url{https://www.causeweb.org/resources/},
+  accessed: 09/03/2014.
+
+\bibitem[{Cronbach(1951)}]{cronbach:51}
+Cronbach, L. (1951), \enquote{Coefficient alpha and the internal structure of
+  tests,} \textit{Psychometrika}, 16, 297--334.
+
+\bibitem[{{DASL Project}(1996)}]{DASL}
+{DASL Project} (1996), \enquote{The Data and Story Library (DASL),}
+  \url{http://lib.stat.cmu.edu/DASL/}, accessed: 09/03/2014.
+
+\bibitem[{Finzer et~al.(2007)Finzer, Erickson, Swenson, and
+  Litwin}]{Finzer2007}
+Finzer, W., Erickson, T., Swenson, K., and Litwin, M. (2007), \enquote{On
+  Getting More and Better Data into the Classroom,} \textit{Technology
+  Innovations in Statistics Education}.
+
+\bibitem[{Friborg et~al.(2006)Friborg, Martinussen, and
+  Rosenvinge}]{Friborg2006}
+Friborg, O., Martinussen, M., and Rosenvinge, J. (2006), \enquote{Likert-based
+  vs. semantic differential-based scoring of positive psychological constructs:
+  A psychometric comparison of two versions of a scale measuring resilience,}
+  \textit{Personality and Individual Differences}, 40, 873--884.
+
+\bibitem[{Furnham(1986)}]{Furnham1986}
+Furnham, A. (1986), \enquote{Response Bias, Social Desirability and
+  Dissimulation,} \textit{Personality and Individual Differences}, 7, 385--499.
+
+\bibitem[{George and Mallery(2003)}]{GeorgeMallery2003}
+George, D. and Mallery, P. (2003), \textit{SPSS for Windows Step by Step: A
+  Simple Guide and Reference, 11.0 Update (4th Edition)}, Boston, MA: Allyn \&
+  Bacon.
+
+\bibitem[{{IBM Corp.}(2013)}]{ManyEyes}
+{IBM Corp.} (2013), \enquote{Many Eyes,} \url{www.ibm.com/manyeyes}, accessed:
+  09/03/2014.
+
+\bibitem[{James and DebRoy(2012)}]{RMySQL}
+James, D.~A. and DebRoy, S. (2012), \textit{RMySQL: R interface to the MySQL
+  database}, r package version 0.9-3.
+
+\bibitem[{Kistner and Muller(2004)}]{KistnerMuller2004}
+Kistner, E. and Muller, K. (2004), \enquote{Exant Distributions of Intraclass
+  Correlation and Cronbach's Alpha with Gaussian Data and General Covariance,}
+  \textit{Psychometrika}, 69, 459--474.
+
+\bibitem[{Nunnally and Bernstein(1978)}]{Nunnally1978}
+Nunnally, J. and Bernstein, I. (1978), \textit{Psychometric Theory (Third
+  Edition)}, New York, New York: McGraw Hill.
+
+\bibitem[{{RStudio} and {Inc.}(2014)}]{shiny}
+{RStudio} and {Inc.} (2014), \textit{shiny: Web Application Framework for R}, r
+  package version 0.9.1.
+
+\bibitem[{Smyth(2011)}]{OzDASL}
+Smyth, G. (2011), \enquote{Australasian Data and Story Library (OzDASL),}
+  \url{http://www.statsci.org/data}, accessed: 09/03/2014.
+
+\bibitem[{Unwin(1999)}]{Unwin1999}
+Unwin, A. (1999), \enquote{Visualising Large Data Sets,} \textit{Sistemi
+  Complessi e Statistica Computazionale}.
+
+\end{thebibliography}
