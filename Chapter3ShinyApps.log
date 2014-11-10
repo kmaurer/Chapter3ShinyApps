@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.12)  9 NOV 2014 19:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.12)  9 NOV 2014 20:07
 entering extended mode
 **Chapter3ShinyApps.tex
 (C:\Users\Karsten\Documents\GitHub\Chapter3ShinyApps\Chapter3ShinyApps.tex
@@ -400,22 +400,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-<figure/SampleAndSummarize.png, id=24, 642.14906pt x 495.35063pt>
+[2] [3] <figure/SampleAndSummarize.png, id=24, 642.14906pt x 495.35063pt>
 File: figure/SampleAndSummarize.png Graphic file (type png)
 
 <use figure/SampleAndSummarize.png>
@@ -430,70 +415,70 @@ Package pdftex.def Info: figure/Visualize.png used on input line 145.
 (pdftex.def)             Requested size: 465.06004pt x 289.71985pt.
  [4 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/SampleAndSummar
 ize.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 190--193
+Underfull \hbox (badness 10000) in paragraph at lines 183--186
 
  []
 
 [5 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/Visualize.png>]
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 263.
+Package xcolor Warning: Incompatible color definition on input line 256.
 
 <figure/fluctuationDiagrams-1.pdf, id=36, 867.24pt x 433.62pt>
 File: figure/fluctuationDiagrams-1.pdf Graphic file (type pdf)
 
 <use figure/fluctuationDiagrams-1.pdf>
-Package pdftex.def Info: figure/fluctuationDiagrams-1.pdf used on input line 26
-6.
+Package pdftex.def Info: figure/fluctuationDiagrams-1.pdf used on input line 25
+9.
 (pdftex.def)             Requested size: 460.35791pt x 230.18141pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--287
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
 [8 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/fluctuationDiagr
 ams-1.pdf>]
 
-Package xcolor Warning: Incompatible color definition on input line 340.
+Package xcolor Warning: Incompatible color definition on input line 333.
 
 <figure/OverallSetBars-1.pdf, id=56, 650.43pt x 180.675pt>
 File: figure/OverallSetBars-1.pdf Graphic file (type pdf)
 
 <use figure/OverallSetBars-1.pdf>
-Package pdftex.def Info: figure/OverallSetBars-1.pdf used on input line 343.
+Package pdftex.def Info: figure/OverallSetBars-1.pdf used on input line 336.
 (pdftex.def)             Requested size: 375.80544pt x 104.39182pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
 [9 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/OverallSetBars-1
 .pdf>]
 
-Package xcolor Warning: Incompatible color definition on input line 380.
+Package xcolor Warning: Incompatible color definition on input line 373.
 
 <figure/PCA6plot-1.pdf, id=66, 361.35pt x 361.35pt>
 File: figure/PCA6plot-1.pdf Graphic file (type pdf)
 
 <use figure/PCA6plot-1.pdf>
-Package pdftex.def Info: figure/PCA6plot-1.pdf used on input line 383.
+Package pdftex.def Info: figure/PCA6plot-1.pdf used on input line 376.
 (pdftex.def)             Requested size: 234.8775pt x 234.88023pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
@@ -501,97 +486,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--424
 ] [11]
 (C:\Users\Karsten\Documents\GitHub\Chapter3ShinyApps\Chapter3ShinyApps.bbl)
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 471--472
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--474
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--476
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 503--504
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--506
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
 
  []
 
@@ -600,11 +585,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 571--571
 Here is how much of TeX's memory you used:
  4294 strings out of 494045
  56933 string characters out of 3145963
- 127241 words of memory out of 3000000
+ 126241 words of memory out of 3000000
  7485 multiletter control sequences out of 15000+200000
  22060 words of font info for 63 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,10n,35p,1630b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,10n,35p,1639b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Karsten\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ecrm0700.pk> <C:\Users\Karsten\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
 ppen\ec\dpi600\ecti1000.pk> <C:\Users\Karsten\AppData\Local\MiKTeX\2.9\fonts\pk
@@ -630,7 +615,7 @@ pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Chapter3ShinyApps.pdf (15 pages, 411828 bytes).
+Output written on Chapter3ShinyApps.pdf (15 pages, 411859 bytes).
 PDF statistics:
  568 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
