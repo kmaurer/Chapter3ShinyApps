@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{16}
 \newcommand{\enquote}[1]{``#1''}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
@@ -8,6 +8,12 @@ Aliaga, M., Cobb, G., Cuff, C., Garfield, J., Gould, R., Lock, R., Moore, T.,
   Rossman, A., Stephenson, B., Utts, J., Velleman, P., and Witmer, J. (2005),
   \enquote{Guidelines for Assessment and Instruction in Statistics Education:
   College Report,} .
+
+\bibitem[{{American Statistical Association}(2014)}]{JSErepo}
+{American Statistical Association} (2014), \enquote{Journal of Statistics
+  Education (JSE) Data Archives,}
+  \url{http://www.amstat.org/publications/jse/jse_data_archive.htm}, accessed:
+  09/03/2014.
 
 \bibitem[{{CAUSE}(2014)}]{CAUSErepo}
 {CAUSE} (2014), \enquote{Consortium for the Advancement of Undergraduate

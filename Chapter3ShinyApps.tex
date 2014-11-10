@@ -98,11 +98,13 @@ As the availability of truly massive data sets proliferates it is enticing to in
 
 \section{Introduction}
 
-Statistics education has been rapidly evolving in the past decade with respect to undergraduate course curriculum and assessment. Technology has played the role as a catalyst for many of these major changes.  An important change involves how data is accessed and analyzed in the classroom.   The GAISE report laid out six recommendations on how to improve the teaching of introductory statistics; two of which urge statistics instructors to "Use technology for developing conceptual understanding and analyzing data" and to "Use real data" \citep{GAISEcollege}.   There are many software tools and online repositories for instructors to access real data for use in the statistics classroom; such as DASL \citep{DASL} , OzDASL \citep{OzDASL} CAUSE \citep{CAUSErepo}  and Many Eyes \citep{ManyEyes}.  These technological tools are wonderful for accessing many real data sets but the majority of the data sets currently available are quite small in scale.\\
+\km{This is the intro section from the ICOTS paper, needs to be adapted}\\
 
-In his paper on graphics for large data, Unwin states that "(t)he definition of large in relation to data is always changing. A data set that required substantial high performance computing one year becomes easily analysable on a laptop a few years later"  \citep[][p.~129]{Unwin1999}. What constitutes "small data" or "big data" is constantly being redefined in the field of statistics as computation allows us to collect, store and manipulate larger and larger data sets, but what is consistent is the desire to be able to analyze big data.  Finzer, Erickson, Swenson and Litwin argue that in an introductory level statistics curriculum "(w)hat seems to us to be missing are data sets-especially large and highly multivariate data sets-that are ripe for exploration and conjecture driven by the students' intrigue, puzzlement and desire for discovery" \citep[][p.~1]{Finzer2007}.
+Statistics education has been rapidly evolving in the past decade with respect to undergraduate course curriculum and assessment. Technology has played the role as a catalyst for many of these major changes.  An important change involves how data is accessed and analyzed in the classroom.   The GAISE report laid out six recommendations on how to improve the teaching of introductory statistics; two of which urge statistics instructors to ``Use technology for developing conceptual understanding and analyzing data'' and to ``Use real data'' \citep{GAISEcollege}.   There are many software tools and online repositories for instructors to access real data for use in the statistics classroom; such as DASL \citep{DASL} , OzDASL \citep{OzDASL}, Journal of Statistics Education Data Archives \citep{JSErepo}, CAUSE Web Repository \citep{CAUSErepo}  and Many Eyes \citep{ManyEyes}.  These technological tools are wonderful for accessing many real data sets but the majority of the data sets currently available are quite small in scale.\\
 
-\hh{Lit Review is part of the intro; general outline of the intro should be something like
+In his paper on graphics for large data, Unwin states that ``(t)he definition of large in relation to data is always changing. A data set that required substantial high performance computing one year becomes easily analysable on a laptop a few years later'' \citep[][p.~129]{Unwin1999}. What constitutes ``small data'' or ``big data'' is constantly being redefined in the field of statistics as computation allows us to collect, store and manipulate larger and larger data sets, but what is consistent is the desire to be able to analyze big data.  Finzer, Erickson, Swenson and Litwin argue that in an introductory level statistics curriculum ``(w)hat seems to us to be missing are data sets-especially large and highly multivariate data sets-that are ripe for exploration and conjecture driven by the students' intrigue, puzzlement and desire for discovery'' \citep[][p.~1]{Finzer2007}.\\
+
+\hh{general outline of the intro should be something like
 \begin{itemize}
 \item: Motivation of what do we do?
 \item What has been done? - that's where the part of the lit review comes in
@@ -111,20 +113,41 @@ In his paper on graphics for large data, Unwin states that "(t)he definition of 
 \end{itemize}}
 
 %-----------------------------------------------------------------------------------
-% \section{Literature Review}
-% \begin{itemize}
-% \item 
-% \end{itemize}
-
-%-----------------------------------------------------------------------------------
 \section{Shiny Database Sampler}
 
- Exposing students to large data sources is tricky because after a certain size, data is no longer easily transferred and stored to the student's personal computer.  This necessitates the use of remote databases and database querying software in order for the students to interact with big data.  This is no small task for either student or teacher in most undergraduate statistics courses.  The Shiny Database Sampler tool was constructed to streamline this process of accessing data in large databases.  It should be noted that the tool is not designed for the user to directly specify a query to the database but instead, as the name implies, allow for manageable subsamples from the large data bases to be obtained and downloaded. 
-The Shiny Database Sampler is a Javascript based online application created using the Shiny package in the R statistical computing language \citep{shiny}. The Shiny package uses specially structured R code files to generate the online graphical user interface that interacts with an R session running on the server.  This was used in combination with the \texttt{RMySQL} package to allow the R session on the server machine to query the database at the users request via buttons on the graphical user interface \citep{RMySQL}.  
+\km{  Exposing students to large data sources is tricky because after a certain size, it is unweildy to transfer, store and access data using the student's personal computer.  This necessitates the use of remote databases and database querying software in order for the students to interact with big data.  This is no small task for either student or teacher in most undergraduate statistics courses.  The Shiny Database Sampler tool was constructed to streamline this process of accessing data in large databases.  It should be noted that the tool is not designed for the user to directly specify a query to the database but instead, as the name implies, allow for manageable subsamples from the large data bases to be obtained and downloaded. \\  }
+
+\km{  The Shiny Database Sampler is a Javascript based online application created using the Shiny package in the R statistical computing language \citep{shiny}. The Shiny package uses specially structured R code files to generate the online graphical user interface that interacts with an R session running on the server.  This was used in combination with the \texttt{RMySQL} package to allow the R session on the server machine to query the database at the users request via buttons on the graphical user interface \citep{RMySQL}.  \\  }
+
+\km{  This section will begin by describing the design features of the Shiny Database Sampler tool, which allows users to take random samples from databases through a point-and-click online JavaScript interface.  After describing interface, examples of how the tool has been integrating into course activities will be detailed. A user experience survey was conducted following a lab activity that used the Shiny Database Sampler.  The survey results indicate that on average students found the application easy to use, found that the tool connected them to sampling concepts and felt moderately engaged with the census data that was accessed with the application. \\  }
 
 
 %%%-----------------------------------------------------------------------------------
 \subsection{Layout and Functionality}
+
+The Shiny Database Sampler allows the user to randomly sample subsets from remotely stored SQL databases using a point-and-click graphical user interface. The tool is available online through the link at \url{shiny.stat.iastate.edu/karstenm/}.  A screenshot of the graphical user interface is shown in Figure 1 below.  The interface is broken into two main sections: a main panel and a sidebar panel. The main panel is for displaying information and the side panel is where the user specifies options; however these sections contain diffent options and displays depending on which tab of the application is selected.\\
+
+When the ``Sample and Summarize'' tab is selected the Shiny Database Sampler will have the layout displayed in Figure~\ref{samplesummarizetab}. The sidebar panel contains several fields and buttons for selecting and executing a sampling plan.  At the top of the sidebar is a dropdown menu to select the database table from which the user wants to take a random subset.  The current version of the tool allows users to access workout data from an Iowa State fitness club called the RecMilers \url{www.recservices.iastate.edu/fitness/recmilers}, the 2001-2009 Fatality Analysis Recording System accident data from the National Highway Traffic Safety Administration \url{www.nhtsa.gov/FARS} and the Public Use Micro Sample data from the 2000 United States Census \url{www.census.gov/}.  After choosing the database, the user can choose between taking a simple or stratified random subsample of data from the database.  If the user chooses simple random sampling then all that remains is selecting a sample size; whereas if the user chooses a stratified random sample the stata variable and number of samples per stratum need to be specified.  Once the sampling setup is ready, the user may click the ``Get My Sample!'' button and the randomly selected subsample of the database will be obtained and displayed in the main panel of the interface.  Lastly, the side panel contains the button to download the selected subsample to a local drive on the user's computer.  The data will be downloaded as comma separated values (csv) file to the default download folder on the user''s computer.\\
+
+The main panel under the ``Sample and Summarize'' tab displays a data table and a basic summary of each variable in the selected subsample.  When first accessing the webpage, a default sample is taken from the Rec Milers database and displayed until a sample of the users choosing is selected.  The data table is searchable, sortable and expandable which makes it easy for the user to take a quick peek at the variable names and values that have been selected.  The basic summary statistics for each variable are also displayed in the main panel below the data table; those familiar with \texttt{R} programming will quickly recognize this as the verbatim output of the \texttt{summary()} function.  The displays in the main panel of the Shiny Database Sampler are not intended to be the location for any extensive analysis of the sampled data but instead a quick check that the data that were sampled are what the user intended to select.  \\
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[keepaspectratio=TRUE,width=.99\textwidth]{figure/SampleAndSummarize.png}
+\end{center}
+\caption{Shiny Database Sampler Layout for "Sample and Summarize" Tab} 
+\label{samplesummarizetab}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[keepaspectratio=TRUE,width=.99\textwidth]{figure/Visualize.png}
+\end{center}
+\caption{Shiny Database Sampler Layout for "Visualize" Tab} 
+\label{visualizetab}
+\end{figure}
+
 
 \underline{sampling options}
 \begin{itemize}

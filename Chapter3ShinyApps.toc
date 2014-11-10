@@ -2,18 +2,18 @@
 \contentsline {section}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {2}Shiny Database Sampler}{3}
 \contentsline {subsection}{\numberline {2.1}Layout and Functionality}{3}
-\contentsline {subsection}{\numberline {2.2}Applications}{3}
-\contentsline {subsection}{\numberline {2.3}Student Response Survey Following Lab Application}{4}
-\contentsline {subsubsection}{\numberline {2.3.1}Lab Overview}{4}
-\contentsline {subsubsection}{\numberline {2.3.2}Survey Description}{4}
-\contentsline {subsubsection}{\numberline {2.3.3}Assessment of Internal Consistency for Item Topic Sets}{5}
-\contentsline {subsubsection}{\numberline {2.3.4}Assessment of Polarity Issues}{7}
-\contentsline {subsubsection}{\numberline {2.3.5}Assessment of Orthogonality}{8}
-\contentsline {subsubsection}{\numberline {2.3.6}Survey Assessment Results}{9}
-\contentsline {section}{\numberline {3}Shiny Database Aggregator}{10}
-\contentsline {subsection}{\numberline {3.1}Layout and Functionality}{10}
-\contentsline {subsection}{\numberline {3.2}Applications}{10}
-\contentsline {section}{\numberline {4}Conclusions and Future Work}{10}
-\contentsline {section}{\numberline {A}Appendix: Lab Assignment}{11}
-\contentsline {section}{\numberline {B}Appendix: Database Descriptions}{12}
-\contentsline {section}{\numberline {C}Appendix: Cronbach's $\alpha $ Properties}{12}
+\contentsline {subsection}{\numberline {2.2}Applications}{5}
+\contentsline {subsection}{\numberline {2.3}Student Response Survey Following Lab Application}{5}
+\contentsline {subsubsection}{\numberline {2.3.1}Lab Overview}{6}
+\contentsline {subsubsection}{\numberline {2.3.2}Survey Description}{6}
+\contentsline {subsubsection}{\numberline {2.3.3}Assessment of Internal Consistency for Item Topic Sets}{7}
+\contentsline {subsubsection}{\numberline {2.3.4}Assessment of Polarity Issues}{9}
+\contentsline {subsubsection}{\numberline {2.3.5}Assessment of Orthogonality}{10}
+\contentsline {subsubsection}{\numberline {2.3.6}Survey Assessment Results}{11}
+\contentsline {section}{\numberline {3}Shiny Database Aggregator}{12}
+\contentsline {subsection}{\numberline {3.1}Layout and Functionality}{12}
+\contentsline {subsection}{\numberline {3.2}Applications}{12}
+\contentsline {section}{\numberline {4}Conclusions and Future Work}{12}
+\contentsline {section}{\numberline {A}Appendix: Lab Assignment}{13}
+\contentsline {section}{\numberline {B}Appendix: Database Descriptions}{14}
+\contentsline {section}{\numberline {C}Appendix: Cronbach's $\alpha $ Properties}{14}
