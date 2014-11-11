@@ -158,7 +158,10 @@ Statistics education has been rapidly evolving in the past decade with respect t
 %-----------------------------------------------------------------------------------
 \section{Shiny Database Sampler}
 
-\km{  Exposing students to large data sources is tricky because after a certain size, it is unweildy to transfer, store and access data using the student's personal computer.  This necessitates the use of remote databases and database querying software in order for the students to interact with big data.  This is no small task for either student or teacher in most undergraduate statistics courses.  The Shiny Database Sampler tool was constructed to streamline this process of accessing data in large databases.  It should be noted that the tool is not designed for the user to directly specify a query to the database but instead, as the name implies, allow for manageable subsamples from the large data bases to be obtained and downloaded. \\  }
+Exposing students to large data is tricky because after a certain size, issues with transferring, storing and accessing data become to unwieldy using a student's personal computer.  This makes it necessary to use  remote databases and database querying software in order for the students to interact with big data, which puts it outside the realm of most undergraduate statistics courses for both students and instructors.  
+The Shiny Database Sampler tool was constructed to provide access to data in large databases 
+%It should be noted that the tool is not designed for the user to directly specify a query to the database but instead, as the name implies, allow for manageable subsamples from the large data bases to be obtained and downloaded. \\  
+by allowing users to access the database by obtaining and downloading samples of a more manageable size.
 
 \km{  The Shiny Database Sampler is a Javascript based online application created using the Shiny package in the R statistical computing language \citep{shiny}. The Shiny package uses specially structured R code files to generate the online graphical user interface that interacts with an R session running on the server.  This was used in combination with the \texttt{RMySQL} package to allow the R session on the server machine to query the database at the users request via buttons on the graphical user interface \citep{RMySQL}.  \\  }
 
