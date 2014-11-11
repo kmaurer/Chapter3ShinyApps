@@ -170,7 +170,7 @@ Statistics education has been rapidly evolving in the past decade with respect t
 
 \km{  The Shiny Database Sampler allows the user to randomly sample subsets from remotely stored SQL databases using a point-and-click graphical user interface. The tool is available online through the link at \url{shiny.stat.iastate.edu/karstenm/}.  A screenshot of the graphical user interface is shown in Figure 1 below.  The interface is broken into two main sections: a main panel and a sidebar panel. The main panel is for displaying information and the side panel is where the user specifies options; however these sections contain diffent options and displays depending on which tab of the application is selected.\\  }
 
-\km{  When the ``Sample and Summarize'' tab is selected the Shiny Database Sampler will have the layout displayed in Figure~\ref{samplesummarizetab}. The sidebar panel contains several fields and buttons for selecting and executing a sampling plan.  At the top of the sidebar is a dropdown menu to select the database table from which the user wants to take a random subset.  The current version of the tool allows users to access workout data from an Iowa State fitness club called the RecMilers \url{www.recservices.iastate.edu/fitness/recmilers}, the 2001-2009 Fatality Analysis Recording System accident data from the National Highway Traffic Safety Administration \url{www.nhtsa.gov/FARS} and the Public Use Micro Sample data from the 2000 United States Census \url{www.census.gov/}.  After choosing the database, the user can choose between taking a simple or stratified random subsample of data from the database.  If the user chooses simple random sampling then all that remains is selecting a sample size; whereas if the user chooses a stratified random sample the stata variable and number of samples per stratum need to be specified.  Once the sampling setup is ready, the user may click the ``Get My Sample!'' button and the randomly selected subsample of the database will be obtained and displayed in the main panel of the interface.  Lastly, the side panel contains the button to download the selected subsample to a local drive on the user's computer.  The data will be downloaded as comma separated values (csv) file to the default download folder on the user''s computer.\\  }
+\km{  When the ``Sample and Summarize'' tab is selected the Shiny Database Sampler will have the layout displayed in Figure~\ref{fig:samplesummarizetab}. The sidebar panel contains several fields and buttons for selecting and executing a sampling plan.  At the top of the sidebar is a dropdown menu to select the database table from which the user wants to take a random subset.  The current version of the tool allows users to access workout data from an Iowa State fitness club called the RecMilers \url{www.recservices.iastate.edu/fitness/recmilers}, the 2001-2009 Fatality Analysis Recording System accident data from the National Highway Traffic Safety Administration \url{www.nhtsa.gov/FARS} and the Public Use Micro Sample data from the 2000 United States Census \url{www.census.gov/}.  After choosing the database, the user can choose between taking a simple or stratified random subsample of data from the database.  If the user chooses simple random sampling then all that remains is selecting a sample size; whereas if the user chooses a stratified random sample the stata variable and number of samples per stratum need to be specified.  Once the sampling setup is ready, the user may click the ``Get My Sample!'' button and the randomly selected subsample of the database will be obtained and displayed in the main panel of the interface.  Lastly, the side panel contains the button to download the selected subsample to a local drive on the user's computer.  The data will be downloaded as comma separated values (csv) file to the default download folder on the user''s computer.\\  }
 
 \km{  The main panel under the ``Sample and Summarize'' tab displays a data table and a basic summary of each variable in the selected subsample.  When first accessing the webpage, a default sample is taken from the Rec Milers database and displayed until a sample of the users choosing is selected.  The data table is searchable, sortable and expandable which makes it easy for the user to take a quick peek at the variable names and values that have been selected.  The basic summary statistics for each variable are also displayed in the main panel below the data table; those familiar with \texttt{R} programming will quickly recognize this as the verbatim output of the \texttt{summary()} function.  The displays in the main panel of the Shiny Database Sampler are not intended to be the location for any extensive analysis of the sampled data but instead a quick check that the data that were sampled are what the user intended to select.  \\ }
 
@@ -179,35 +179,56 @@ Statistics education has been rapidly evolving in the past decade with respect t
 \includegraphics[keepaspectratio=TRUE,width=.99\textwidth]{figure/SampleAndSummarize.png}
 \end{center}
 \caption{Shiny Database Sampler Layout for "Sample and Summarize" Tab} 
-\label{samplesummarizetab}
+\label{fig:samplesummarizetab}
 \end{figure}
 
+\km{  The interface for the ``Visualize'' tab is displayed in Figure~\ref{fig:visualizetab} The sidebar panel allows users to select either a single response variable or an explanatory and response pair of variables from their sample from the "Sample and Summarize" tab. The tool requires the student to define variables as either numerical or categorical.  The main panel then displays a plot that matches the user's specification.  By application constructs a plot based on the variable type specified for the response and explanatory variables, and displays the plot in the main panel. The plot types supported by the application are listed in Table~\ref{tab:defaultplottypes}. \\   }
 
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[keepaspectratio=TRUE,width=.99\textwidth]{figure/Visualize.png}
 \end{center}
 \caption{Shiny Database Sampler Layout for "Visualize" Tab} 
-\label{visualizetab}
+\label{fig:visualizetab}
 \end{figure}
 
 
-\underline{sampling options}
-\begin{itemize}
-\item database: recmiler, accidents, census
-\item type: SRS, stratified
-\item sample size
-\item seed: why seed available
-\end{itemize}
 
-\vspace{.1in}
+\begin{table}[H]
+\centering
+\begin{tabular}{lll}
+\hline 
+Response Variable & Explanatory Variable & Default Plot \\
+\hline
+Numerical & None & Histogram \\
+Categorical & None & Barchart \\
+Numerical & Numerical & Scatterplot \\
+Categorical & Categorical & Stacked Barplot \\
+Numerical & Categorical & Side-by-side Boxplots \\
 
-\underline{data summaries}
-\begin{itemize}
-\item table: sortable, searchable
-\item summary statistics: basic, broken down by strata if stratified sample taken
-\item plots: specify 1 or 2 variables and variable types to generate default plot types
-\end{itemize}
+\hline
+\end{tabular}
+\caption{Default Plot Construction for the "Visualize" Tab of the Shiny Database Sampler} 
+\label{tab:defaultplottypes}
+\end{table}
+
+
+% \underline{sampling options}
+% \begin{itemize}
+% \item database: recmiler, accidents, census
+% \item type: SRS, stratified
+% \item sample size
+% \item seed: why seed available
+% \end{itemize}
+% 
+% \vspace{.1in}
+% 
+% \underline{data summaries}
+% \begin{itemize}
+% \item table: sortable, searchable
+% \item summary statistics: basic, broken down by strata if stratified sample taken
+% \item plots: specify 1 or 2 variables and variable types to generate default plot types
+% \end{itemize}
 
 \vspace{.1in}
 
