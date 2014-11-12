@@ -161,9 +161,9 @@ Statistics education has been rapidly evolving in the past decade with respect t
 Exposing students to large data is tricky because after a certain size, issues with transferring, storing and accessing data become to unwieldy using a student's personal computer.  This makes it necessary to use  remote databases and database querying software in order for the students to interact with big data, which puts it outside the realm of most undergraduate statistics courses for both students and instructors.  
 The Shiny Database Sampler tool was constructed to provide access to data in large databases 
 %It should be noted that the tool is not designed for the user to directly specify a query to the database but instead, as the name implies, allow for manageable subsamples from the large data bases to be obtained and downloaded. \\  
-by allowing users to access the database by obtaining and downloading samples of a more manageable size.
+by allowing users to access the database by obtaining and downloading samples of a more manageable size.\\
 
-\km{  The Shiny Database Sampler is a Javascript based online application created using the Shiny package in the R statistical computing language \citep{shiny}. The Shiny package uses specially structured R code files to generate the online graphical user interface that interacts with an R session running on the server.  This was used in combination with the \texttt{RMySQL} package to allow the R session on the server machine to query the database at the users request via buttons on the graphical user interface \citep{RMySQL}.  \\  }
+The Shiny Database Sampler is a Javascript based online application created using the Shiny package \citep{shiny} in the statistical computing language R \hh{citation needed}. The Shiny package uses \hh{`specially structured' - that sounds  vague; either say more or less} specially structured R code files to generate the graphical user interface that interacts with an R session running on the server.  This was used in combination with the \texttt{RMySQL} package \citep{RMySQL} to allow the R session on the server machine to query the database at the user's request via buttons on the graphical user interface.  \\  
 
 \km{  This section will begin by describing the design features of the Shiny Database Sampler tool, which allows users to take random samples from databases through a point-and-click online JavaScript interface.  After describing interface, examples of how the tool has been integrating into course activities will be detailed. A user experience survey was conducted following a lab activity that used the Shiny Database Sampler.  The survey results indicate that on average students found the application easy to use, found that the tool connected them to sampling concepts and felt moderately engaged with the census data that was accessed with the application. \\  }
 
@@ -171,7 +171,7 @@ by allowing users to access the database by obtaining and downloading samples of
 %%%-----------------------------------------------------------------------------------
 \subsection{Layout and Functionality}
 
-\km{  The Shiny Database Sampler allows the user to randomly sample subsets from remotely stored SQL databases using a point-and-click graphical user interface. The tool is available online through the link at \url{shiny.stat.iastate.edu/karstenm/}.  A screenshot of the graphical user interface is shown in Figure 1 below.  The interface is broken into two main sections: a main panel and a sidebar panel. The main panel is for displaying information and the side panel is where the user specifies options; however these sections contain diffent options and displays depending on which tab of the application is selected.\\  }
+The Shiny Database Sampler allows the user to randomly sample subsets from remotely stored SQL databases using a point-and-click graphical user interface. The tool is available online through the link at \url{http://shiny.stat.iastate.edu/karstenm/ShinyDatabaseSampler/}.  A screenshot of the graphical user interface is shown in Figure 1 below.  The interface is broken into two main sections: a main panel and a sidebar panel. The main panel is for displaying information and the side panel is where the user specifies options; however these sections contain diffent options and displays depending on which tab of the application is selected.\\  
 
 \km{  When the ``Sample and Summarize'' tab is selected the Shiny Database Sampler will have the layout displayed in Figure~\ref{fig:samplesummarizetab}. The sidebar panel contains several fields and buttons for selecting and executing a sampling plan.  At the top of the sidebar is a dropdown menu to select the database table from which the user wants to take a random subset.  The current version of the tool allows users to access workout data from an Iowa State fitness club called the RecMilers \url{www.recservices.iastate.edu/fitness/recmilers}, the 2001-2009 Fatality Analysis Recording System accident data from the National Highway Traffic Safety Administration \url{www.nhtsa.gov/FARS} and the Public Use Micro Sample data from the 2000 United States Census \url{www.census.gov/}.  After choosing the database, the user can choose between taking a simple or stratified random subsample of data from the database.  If the user chooses simple random sampling then all that remains is selecting a sample size; whereas if the user chooses a stratified random sample the stata variable and number of samples per stratum need to be specified.  Once the sampling setup is ready, the user may click the ``Get My Sample!'' button and the randomly selected subsample of the database will be obtained and displayed in the main panel of the interface.  Lastly, the side panel contains the button to download the selected subsample to a local drive on the user's computer.  The data will be downloaded as comma separated values (csv) file to the default download folder on the user''s computer.\\  }
 
@@ -378,7 +378,7 @@ Cronbach's $\alpha$ measures internal consistency between a set of responses by 
 \end{equation}
 
 where $Y_i$ denotes the response on the $i^{\text{th}}$ survey item ($ i = 1,... , K$), and $K$ is the number of survey items considered for internal consistency. Generally, $K=4$ for the item sets of this survey.
-Cronbach's $\alpha$ reaches a maximal value of 1, if there is perfect agreement between items (i.e. all responses to the same item set are identical). In the case that items sets are independent, the internal consistency is measured as $\alpha = 0 $. Cronbach's $\alpha$ is negative int the situation of consistent disagreement between responses and will approache negative infinity if there is perfect disagreement between items.  See appendix~\ref{appendCronbach} for details on the bounds for $\alpha$. 
+Cronbach's $\alpha$ reaches a maximal value of 1, if there is perfect agreement between items (i.e. all responses to the same item set are identical). In the case that items sets are independent, the internal consistency is measured as $\alpha = 0 $. Cronbach's $\alpha$ is negative in the situation of consistent disagreement between responses and will approach negative infinity if there is perfect disagreement between items.  See appendix~\ref{appendCronbach} for details on the bounds for $\alpha$. 
  \citet[][p.~265]{Nunnally1978} propose that an $\alpha$ of 0.7 or above should be considered as an indication of ``modest reliability''.   \citet{GeorgeMallery2003} provide the commonly used extended scale, displayed in Table~\ref{GMAlphaScale}, for interpreting internal consistency based on Cronbach's $\alpha$. \\
 
 \begin{table}[H]
@@ -399,9 +399,8 @@ Unacceptable & $( -\infty, 0.5 )$ \\
 \label{GMAlphaScale}
 \end{table}
 
-\hh{'are available' is a bit vague. Could you re-phrase this and say what distribution $\alpha$ follows under normality of the item sets? } \km{Is this better? the construction of the degrees of freedom for the F distribution are quite convoluted, but I have tried to boil down the primary origins}\\
-
-\km{  Under the assumption of Gaussian data, the distribution of alpha is approximately $F_{\nu_1,\nu_2}$ distributed, where $\nu_1 = n-1$ and $\nu_2$ is based on a function of the eigenvalues from the quadratic linear combination of the roots of the variance matrix. \citep{KistnerMuller2004}.  Thus distributionally based confidence intervals are available for Cronbach's $\alpha$, but we are not entirely willing to assume Normally distributed responses to our survey and thus have elected to bootstrap the intervals instead.\\  }
+Under the assumption of normally distributed variable, Cronbach's $\alpha$ follows approximately an $F_{\nu_1,\nu_2}$, where $\nu_1 = n-1$ and $\nu_2$ is based on a function of the eigenvalues from the quadratic linear combination of the roots of the variance matrix \citep{KistnerMuller2004}.  %Thus distributionally based confidence intervals are available for Cronbach's $\alpha$, but we are not entirely willing to assume Normally distributed responses to our survey and thus have elected to bootstrap the intervals instead.\\  
+Normality is a questionable asssumption for the responses in the survey, so we have elected to bootstrap the intervals instead.
 
 
 Table~\ref{cronbachstuff} displays the point estimates and 95\% central bootstrap intervals for Cronbach's $\alpha$ for each item set from the student survey.  The intervals were created using quantiles of Cronbach's $\alpha$ values from each item set based on 10,000 bootstrap resamples. 
@@ -452,7 +451,7 @@ Ease & 0.70 & (0.613 , 0.759)\\
   Engagement & 0.72 & (0.643 , 0.776) \\ 
    \hline
 \end{tabular}
-\caption{Cronbach's $\alpha$ Estimates for each item set with 95\% central confidence intervals based on 10000 bootstrap samples} 
+\caption{Cronbach's $\alpha$ Estimates for each item set with 95\% central confidence intervals based on 10,000 bootstrap samples} 
 \label{cronbachstuff}
 \end{table}
 

@@ -7,7 +7,7 @@
 \contentsline {subsubsection}{\numberline {2.3.1}Lab Overview}{6}
 \contentsline {subsubsection}{\numberline {2.3.2}Survey Description}{6}
 \contentsline {subsubsection}{\numberline {2.3.3}Assessment of Internal Consistency for Item Topic Sets}{7}
-\contentsline {subsubsection}{\numberline {2.3.4}Assessment of Polarity Issues}{9}
+\contentsline {subsubsection}{\numberline {2.3.4}Assessment of Polarity Issues}{8}
 \contentsline {subsubsection}{\numberline {2.3.5}Assessment of Orthogonality}{10}
 \contentsline {subsubsection}{\numberline {2.3.6}Survey Assessment Results}{11}
 \contentsline {section}{\numberline {3}Shiny Database Aggregator}{12}
