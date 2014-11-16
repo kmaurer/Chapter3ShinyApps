@@ -102,7 +102,7 @@ As the availability of truly massive data sets proliferates it is enticing to in
 
 Statistics education has been rapidly evolving in the past decade with respect to undergraduate course curriculum and assessment. Technology has played the role as a catalyst for many of these major changes.  An important change involves how data is accessed and analyzed in the classroom.   The GAISE report \citep{GAISEcollege} laid out six recommendations on how to improve the teaching of introductory statistics; two of which urge statistics instructors to ``Use technology for developing conceptual understanding and analyzing data'' and to ``Use real data''.   There are many software tools and online repositories for instructors to access real data for use in the statistics classroom; such as the Data and Story Library \citep[DASL, ][]{DASL} and its Australian counterpart, OzDASL \citep{OzDASL}, the Data Archives of the Journal of Statistics Education \citep{JSErepo}, CAUSE Web Repository \citep{CAUSErepo}  and Many Eyes \citep{ManyEyes}. \hh{you need to expand on these section - there's quite a bit more in your lit review}  These technological tools are wonderful for accessing many real data sets but the majority of the data sets currently available are quite small in scale.\\
 
-\hh{I think the GOLD book would be better than the reference to the Italian journal} In his paper on graphics for large data,  \citet[][p.~129]{Unwin1999} states that ``(t)he definition of large in relation to data is always changing. A data set that required substantial high performance computing one year becomes easily analysable on a laptop a few years later''. What constitutes ``small data'' or ``big data'' is constantly being redefined in the field of statistics as computation allows us to collect, store and manipulate larger and larger data sets, but what is consistent is the desire to be able to analyze big data. \citet[][p.~1]{Finzer2007} argue that in an introductory level statistics curriculum ``(w)hat seems to us to be missing are data sets-especially large and highly multivariate data sets-that are ripe for exploration and conjecture driven by the students' intrigue, puzzlement and desire for discovery''.\\
+\hh{I think the GOLD book would be better than the reference to the Italian journal} In his paper on graphics for large data,  \citet[][p.~129]{Unwin1999} states that ``(t)he definition of large in relation to data is always changing. A data set that required substantial high performance computing one year becomes easily analyzable on a laptop a few years later''. What constitutes ``small data'' or ``big data'' is constantly being redefined in the field of statistics as computation allows us to collect, store and manipulate larger and larger data sets, but what is consistent is the desire to be able to analyze big data. \citet[][p.~1]{Finzer2007} argue that in an introductory level statistics curriculum ``(w)hat seems to us to be missing are data sets-especially large and highly multivariate data sets-that are ripe for exploration and conjecture driven by the students' intrigue, puzzlement and desire for discovery''.\\
 
 \hh{general outline of the intro should be something like
 \begin{itemize}
@@ -120,7 +120,7 @@ The Shiny Database Sampler tool was constructed to provide access to data in lar
 %It should be noted that the tool is not designed for the user to directly specify a query to the database but instead, as the name implies, allow for manageable subsamples from the large data bases to be obtained and downloaded. \\  
 by allowing users to access the database by obtaining and downloading samples of a more manageable size.\\
 
-The Shiny Database Sampler is a Javascript based online application created using the Shiny package \citep{shiny} in the statistical computing language R \hh{citation needed}. The Shiny package uses \hh{`specially structured' - that sounds  vague; either say more or less} specially structured R code files to generate the graphical user interface that interacts with an R session running on the server.  This was used in combination with the \texttt{RMySQL} package \citep{RMySQL} to allow the R session on the server machine to query the database at the user's request via buttons on the graphical user interface.  \\  
+The Shiny Database Sampler is a JavaScript based online application created using the \texttt{shiny} package \citep{shiny} in the statistical computing language \texttt{R} \citep{R}. The Shiny package uses \texttt{R} code files to generate the graphical user interface that interacts with an \texttt{R} session running on the server.  This was used in combRination with the \texttt{RMySQL} package \citep{RMySQL} to allow the \texttt{R} session on the server machine to query the database at the user's request via buttons on the graphical user interface.  \\  
 
 \km{  This section will begin by describing the design features of the Shiny Database Sampler tool, which allows users to take random samples from databases through a point-and-click online JavaScript interface.  After describing interface, examples of how the tool has been integrating into course activities will be detailed. A user experience survey was conducted following a lab activity that used the Shiny Database Sampler.  The survey results indicate that on average students found the application easy to use, found that the tool connected them to sampling concepts and felt moderately engaged with the census data that was accessed with the application. \\  }
 
@@ -128,9 +128,9 @@ The Shiny Database Sampler is a Javascript based online application created usin
 %%%-----------------------------------------------------------------------------------
 \subsection{Layout and Functionality}
 
-The Shiny Database Sampler allows the user to randomly sample subsets from remotely stored SQL databases using a point-and-click graphical user interface. The tool is available online through the link at \url{http://shiny.stat.iastate.edu/karstenm/ShinyDatabaseSampler/}.  A screenshot of the graphical user interface is shown in Figure 1 below.  The interface is broken into two main sections: a main panel and a sidebar panel. The main panel is for displaying information and the side panel is where the user specifies options; however these sections contain diffent options and displays depending on which tab of the application is selected.\\  
+The Shiny Database Sampler allows the user to randomly sample subsets from remotely stored SQL databases using a point-and-click graphical user interface. The tool is available online through the link at \url{http://shiny.stat.iastate.edu/karstenm/ShinyDatabaseSampler/}.  A screenshot of the graphical user interface is shown in Figure 1 below.  The interface is broken into two main sections: a main panel and a sidebar panel. The main panel is for displaying information and the side panel is where the user specifies options; however these sections contain different options and displays depending on which tab of the application is selected.\\  
 
-\km{  When the ``Sample and Summarize'' tab is selected the Shiny Database Sampler will have the layout displayed in Figure~\ref{fig:samplesummarizetab}. The sidebar panel contains several fields and buttons for selecting and executing a sampling plan.  At the top of the sidebar is a dropdown menu to select the database table from which the user wants to take a random subset.  The current version of the tool allows users to access workout data from an Iowa State fitness club called the RecMilers \url{www.recservices.iastate.edu/fitness/recmilers}, the 2001-2009 Fatality Analysis Recording System accident data from the National Highway Traffic Safety Administration \url{www.nhtsa.gov/FARS} and the Public Use Micro Sample data from the 2000 United States Census \url{www.census.gov/}.  After choosing the database, the user can choose between taking a simple or stratified random subsample of data from the database.  If the user chooses simple random sampling then all that remains is selecting a sample size; whereas if the user chooses a stratified random sample the stata variable and number of samples per stratum need to be specified.  Once the sampling setup is ready, the user may click the ``Get My Sample!'' button and the randomly selected subsample of the database will be obtained and displayed in the main panel of the interface.  Lastly, the side panel contains the button to download the selected subsample to a local drive on the user's computer.  The data will be downloaded as comma separated values (csv) file to the default download folder on the user''s computer.\\  }
+\km{  When the ``Sample and Summarize'' tab is selected the Shiny Database Sampler will have the layout displayed in Figure~\ref{fig:samplesummarizetab}. The sidebar panel contains several fields and buttons for selecting and executing a sampling plan.  At the top of the sidebar is a drop-down menu to select the database table from which the user wants to take a random subset.  The current version of the tool allows users to access workout data from an Iowa State fitness club called the RecMilers \url{www.recservices.iastate.edu/fitness/recmilers}, the 2001-2009 Fatality Analysis Recording System accident data from the National Highway Traffic Safety Administration \url{www.nhtsa.gov/FARS} and the Public Use Micro Sample data from the 2000 United States Census \url{www.census.gov/}.  After choosing the database, the user can choose between taking a simple or stratified random subsample of data from the database.  If the user chooses simple random sampling then all that remains is selecting a sample size; whereas if the user chooses a stratified random sample the strata variable and number of samples per stratum need to be specified.  Once the sampling setup is ready, the user may click the ``Get My Sample!'' button and the randomly selected subsample of the database will be obtained and displayed in the main panel of the interface.  Lastly, the side panel contains the button to download the selected subsample to a local drive on the user's computer.  The data will be downloaded as comma separated values (csv) file to the default download folder on the user's computer.\\  }
 
 \km{  The main panel under the ``Sample and Summarize'' tab displays a data table and a basic summary of each variable in the selected subsample.  When first accessing the webpage, a default sample is taken from the Rec Milers database and displayed until a sample of the users choosing is selected.  The data table is searchable, sortable and expandable which makes it easy for the user to take a quick peek at the variable names and values that have been selected.  The basic summary statistics for each variable are also displayed in the main panel below the data table; those familiar with \texttt{R} programming will quickly recognize this as the verbatim output of the \texttt{summary()} function.  The displays in the main panel of the Shiny Database Sampler are not intended to be the location for any extensive analysis of the sampled data but instead a quick check that the data that were sampled are what the user intended to select.  \\ }
 
@@ -163,7 +163,7 @@ Response Variable & Explanatory Variable & Default Plot \\
 Numerical & None & Histogram \\
 Categorical & None & Barchart \\
 Numerical & Numerical & Scatterplot \\
-Categorical & Categorical & Stacked Barplot \\
+Categorical & Categorical & Stacked Barchart \\
 Numerical & Categorical & Side-by-side Boxplots \\
 
 \hline
@@ -194,24 +194,15 @@ Numerical & Categorical & Side-by-side Boxplots \\
 
 %%%-----------------------------------------------------------------------------------
 \subsection{Applications}
+\label{Applications}
 
-\begin{itemize}
-\item Used in introductory statistics course for lab and course project
-\item Project Use: students pick question then run mock survey using sampler tool
-\item Lab Use: description of lab (perhaps relocate paragraph 2 of next section here)
-\end{itemize}
-
-%%%-----------------------------------------------------------------------------------
-\subsection{Student Response Survey Following Lab Application}
-
-As discussed above, the Shiny Database Sampler was designed for student use on course assignments. We were interested to learn student opinions about using the tool. Specifically we wanted know if students find the tool easy to operate, if they see the connection to sampling concepts and if they find the data engaging. \km{These topics are selected to assess the quality of the Shiny Database Sampler with respect to the interface design and educational value.}
-\hh{slow down - here we will need about one paragraph each for the topics. Start by a more formal definition of what you mean by the topic - give a reference - and how it helps with student learning. }
-\km{\textbf{citation on HCI for why ease of use is important}.  The GAISE guidelines recommend that technological tools should be used to help teach statistical concepts and that the use of real data is important for student engagement, hence we focus on these topics \citep{GAISEcollege}. } \\
-
-Student responses were collected in an anonymous survey following a group lab assignment that required students of Stat 104, Introduction to Statistics, at Iowa State University to use the Shiny Database Sampler tool. Six sections of Stat 104 students were surveyed. The students were informed that the survey was not required and that no penalties or rewards were affiliated with its completion.  Of the 320 students attending lab, 265 completed the survey. 
+The Shiny Database Sampler was designed for application in the introductory statistics classroom.  The tool has been used in introductory statistics courses at Iowa State University to support a lab assignment on random sampling and also as data source for a capstone project. The following subsection provide an overview of these applications.
 
 %-------------------------------------------------------------------------
- \subsubsection{Lab Overview} 
+ \subsubsection{Lab Application Overview} 
+ \label{LabOverview}
+ 
+\km{ Note: This section has been moved up from "suvery" section of paper to more appropriate "applications" section \\ }
 
 The lab that utilized the Shiny Database Sampler was designed for students to think critically about sampling approaches, then use the tool allowed to treat the large database as 
 a population from which to obtain survey data. Students were asked to consider the following pair of hypothetical situations:
@@ -225,6 +216,25 @@ a population from which to obtain survey data. Students were asked to consider t
 \hh{XXX what you describe below is called `good friction' when designing computer interfaces, because you need to intentionally slow users down sometimes, and get them to make important decisions first. I am fairly certain that there is a corresponding counter part in the educational literature. Look into literature that talks about how to get students engaged into material - that should be a similar concept to good friction.
 }
 In each scenario students were asked to discuss the choice of sampling scheme, and in particular to identify potential problems. The students used the Shiny Database Sampler tool to obtain a sample from the database containing a 1\% microsample of the 2010 U.S. Census, from which they estimated mean and median age of U.S. residents. This lab was written to ensure that sampling concepts were the primary focus, with the Shiny Database Sampler acting in a supporting role. In order to avoid (sporadic) clicking of buttons to obtain samples without ever stopping to consider why the sampling approach matters, we intentionally designed the assignment to invite students to carefully consider sampling options {\it before} using the tool. The entire lab assignment can be found in Appendix \ref{labappend}. 
+
+\km{ 
+\subsubsection{Capstone Project Application Overview} 
+\label{ProjectOverview}
+ 
+A second application of the Shiny Database Sampler was as a data source for a capstone project for two sections of the Stat 104 class, over the span of two semesters.  The project required students to define a research question that could be answered by investigating a bivariate relationship. The groups would then collect, visualize and analyze the bivariate data using what they had learned in the class. \\
+
+While the format was a formal written report, the research question and data collection format were left open ended to allow students' interests to be incorporated.  Some groups chose to conduct experiments ranging from the dull (i.e. distance of ball roll vs angle of ramp) to the interesting (i.e. resistance genes in soy plants vs aphid population growth).  Other groups chose to run surveys with friends and discuss an observed bivariate relationship in the presence of sampling bias. A number of groups chose to run a mock survey, using the databases available through the Shiny Database Sampler as surrogates for large populations. 
+
+} %end \km
+
+%%%-----------------------------------------------------------------------------------
+\subsection{Student Response Survey Following Lab Application}
+
+As discussed above, the Shiny Database Sampler was designed for student use on course assignments. We were interested to learn student opinions about using the tool. Specifically we wanted know if students find the tool easy to operate, if they see the connection to sampling concepts and if they find the data engaging. \km{These topics are selected to assess the quality of the Shiny Database Sampler with respect to the interface design and educational value.}
+\hh{slow down - here we will need about one paragraph each for the topics. Start by a more formal definition of what you mean by the topic - give a reference - and how it helps with student learning. }
+\km{\textbf{citation on HCI for why ease of use is important}.  The GAISE guidelines recommend that technological tools should be used to help teach statistical concepts and that the use of real data is important for student engagement, hence we focus on these topics \citep{GAISEcollege}. } \\
+
+Student responses were collected in an anonymous survey following the group lab assignment -- as described in Section~\ref{LabOverview} -- that required students of Stat 104, Introduction to Statistics, at Iowa State University to use the Shiny Database Sampler tool. Six sections of Stat 104 students were surveyed. The students were informed that the survey was not required and that no penalties or rewards were affiliated with its completion.  Of the 320 students attending lab, 265 completed the survey. 
 
 %-------------------------------------------------------------------------
  \subsubsection{Survey Description} 
@@ -266,6 +276,9 @@ Engagement & 1 & \it I did not enjoy working with the Census data & $-$  & 0.38 
 
 %\newpage
 From Table \ref{tab:surveyquestions} we see that all response averages are positive after reverse-scoring. With the Ease items this indicates that students tend to find the tool relatively easy to operate. For frame of reference, we assume that students are comparing the difficulty of use with other educational technologies and webpages they have encountered in the past; in particular the \texttt{JMP} software used previously on their Stat 104 labs and homework. Students also tend to respond to Concept items in a manner that is affirmative that the tool connects them to sampling concepts. Students' responses are near to neutral for most items about engagement with the census data, with the exception of Engagement item 3.  The phrasing of this question seems to have led students to reconsider their engagement level and led to a consistently more positive attitude.
+
+--
+
 
 %-------------------------------------------------------------------------
 \subsubsection{Assessment of Internal Consistency for Item Topic Sets} 
@@ -321,7 +334,7 @@ Unacceptable & $( -\infty, 0.5 )$ \\
 \end{table}
 
 Under the assumption of normally distributed variable, Cronbach's $\alpha$ follows approximately an $F_{\nu_1,\nu_2}$, where $\nu_1 = n-1$ and $\nu_2$ is based on a function of the eigenvalues from the quadratic linear combination of the roots of the variance matrix \citep{KistnerMuller2004}.  %Thus distributionally based confidence intervals are available for Cronbach's $\alpha$, but we are not entirely willing to assume Normally distributed responses to our survey and thus have elected to bootstrap the intervals instead.\\  
-Normality is a questionable asssumption for the responses in the survey, so we have elected to bootstrap the intervals instead.
+Normality is a questionable assumption for the responses in the survey, so we have elected to bootstrap the intervals instead.
 
 
 Table~\ref{cronbachstuff} displays the point estimates and 95\% central bootstrap intervals for Cronbach's $\alpha$ for each item set from the student survey.  The intervals were created using quantiles of Cronbach's $\alpha$ values from each item set based on 10,000 bootstrap resamples. 

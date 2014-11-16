@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.12)  16 NOV 2014 10:47
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.12)  16 NOV 2014 12:16
 entering extended mode
 **Chapter3ShinyApps.tex
 (C:\Users\Karsten\Documents\GitHub\Chapter3ShinyApps\Chapter3ShinyApps.tex
@@ -429,176 +429,182 @@ File: figure/Visualize.png Graphic file (type png)
 <use figure/Visualize.png>
 Package pdftex.def Info: figure/Visualize.png used on input line 149.
 (pdftex.def)             Requested size: 465.06004pt x 289.71985pt.
+ [5 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/Visualize.png>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--210
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
 
  []
 
-[5 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/Visualize.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--236
+
+ []
+
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
+[7]
 
-Package xcolor Warning: Incompatible color definition on input line 280.
+Package xcolor Warning: Incompatible color definition on input line 293.
 
-<figure/fluctuationDiagrams-1.pdf, id=36, 867.24pt x 433.62pt>
+<figure/fluctuationDiagrams-1.pdf, id=42, 867.24pt x 433.62pt>
 File: figure/fluctuationDiagrams-1.pdf Graphic file (type pdf)
 
 <use figure/fluctuationDiagrams-1.pdf>
-Package pdftex.def Info: figure/fluctuationDiagrams-1.pdf used on input line 28
-3.
+Package pdftex.def Info: figure/fluctuationDiagrams-1.pdf used on input line 29
+6.
 (pdftex.def)             Requested size: 460.35791pt x 230.18141pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--304
+Underfull \hbox (badness 10000) in paragraph at lines 314--317
 
  []
 
-[7] [8 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/fluctuationD
-iagrams-1.pdf>]
+[8 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/fluctuationDiagr
+ams-1.pdf>]
 
-Package xcolor Warning: Incompatible color definition on input line 356.
+Package xcolor Warning: Incompatible color definition on input line 369.
 
-<figure/OverallSetBars-1.pdf, id=56, 650.43pt x 180.675pt>
+<figure/OverallSetBars-1.pdf, id=55, 650.43pt x 180.675pt>
 File: figure/OverallSetBars-1.pdf Graphic file (type pdf)
 
 <use figure/OverallSetBars-1.pdf>
-Package pdftex.def Info: figure/OverallSetBars-1.pdf used on input line 359.
+Package pdftex.def Info: figure/OverallSetBars-1.pdf used on input line 372.
 (pdftex.def)             Requested size: 375.80544pt x 104.39182pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
+[9 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/OverallSetBars-1
+.pdf>]
 
-Package xcolor Warning: Incompatible color definition on input line 396.
+Package xcolor Warning: Incompatible color definition on input line 409.
 
-<figure/PCA6plot-1.pdf, id=57, 361.35pt x 361.35pt>
+<figure/PCA6plot-1.pdf, id=66, 361.35pt x 361.35pt>
 File: figure/PCA6plot-1.pdf Graphic file (type pdf)
 
 <use figure/PCA6plot-1.pdf>
-Package pdftex.def Info: figure/PCA6plot-1.pdf used on input line 399.
+Package pdftex.def Info: figure/PCA6plot-1.pdf used on input line 412.
 (pdftex.def)             Requested size: 234.8775pt x 234.88023pt.
- [9 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/OverallSetBars-
-1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 439--440
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
 [10 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/PCA6plot-1.pdf>
-] [11]
-(C:\Users\Karsten\Documents\GitHub\Chapter3ShinyApps\Chapter3ShinyApps.bbl)
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 487--488
+]
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+[11] (C:\Users\Karsten\Documents\GitHub\Chapter3ShinyApps\Chapter3ShinyApps.bbl
+[12]) [13]
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--492
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 519--520
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--522
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 
  []
 
-[15] (C:\Users\Karsten\Documents\GitHub\Chapter3ShinyApps\Chapter3ShinyApps.aux
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+
+ []
+
+[16] (C:\Users\Karsten\Documents\GitHub\Chapter3ShinyApps\Chapter3ShinyApps.aux
 ) ) 
 Here is how much of TeX's memory you used:
- 4295 strings out of 494045
- 56963 string characters out of 3145963
- 127248 words of memory out of 3000000
- 7486 multiletter control sequences out of 15000+200000
+ 4301 strings out of 494045
+ 57034 string characters out of 3145963
+ 124314 words of memory out of 3000000
+ 7492 multiletter control sequences out of 15000+200000
  22060 words of font info for 63 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,10n,35p,1647b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,10n,35p,1648b,285s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Karsten\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ecrm0700.pk> <C:\Users\Karsten\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
 ppen\ec\dpi600\ecti1000.pk> <C:\Users\Karsten\AppData\Local\MiKTeX\2.9\fonts\pk
@@ -624,9 +630,9 @@ pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Chapter3ShinyApps.pdf (15 pages, 412012 bytes).
+Output written on Chapter3ShinyApps.pdf (16 pages, 413735 bytes).
 PDF statistics:
- 568 PDF objects out of 1000 (max. 8388607)
+ 571 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -237,29 +237,15 @@ Numerical & Categorical & Side-by-side Boxplots \\
 
 %%%-----------------------------------------------------------------------------------
 \subsection{Applications}
+\label{Applications}
 
-\begin{itemize}
-\item Used in introductory statistics course for lab and course project
-\item Project Use: students pick question then run mock survey using sampler tool
-\item Lab Use: description of lab (perhaps relocate paragraph 2 of next section here)
-\end{itemize}
-
-\km{ 
-
-  }
-
-
-%%%-----------------------------------------------------------------------------------
-\subsection{Student Response Survey Following Lab Application}
-
-As discussed above, the Shiny Database Sampler was designed for student use on course assignments. We were interested to learn student opinions about using the tool. Specifically we wanted know if students find the tool easy to operate, if they see the connection to sampling concepts and if they find the data engaging. \km{These topics are selected to assess the quality of the Shiny Database Sampler with respect to the interface design and educational value.}
-\hh{slow down - here we will need about one paragraph each for the topics. Start by a more formal definition of what you mean by the topic - give a reference - and how it helps with student learning. }
-\km{\textbf{citation on HCI for why ease of use is important}.  The GAISE guidelines recommend that technological tools should be used to help teach statistical concepts and that the use of real data is important for student engagement, hence we focus on these topics \citep{GAISEcollege}. } \\
-
-Student responses were collected in an anonymous survey following a group lab assignment that required students of Stat 104, Introduction to Statistics, at Iowa State University to use the Shiny Database Sampler tool. Six sections of Stat 104 students were surveyed. The students were informed that the survey was not required and that no penalties or rewards were affiliated with its completion.  Of the 320 students attending lab, 265 completed the survey. 
+The Shiny Database Sampler was designed for application in the introductory statistics classroom.  The tool has been used in introductory statistics courses at Iowa State University to support a lab assignment on random sampling and also as data source for a capstone project. The following subsection provide an overview of these applications.
 
 %-------------------------------------------------------------------------
- \subsubsection{Lab Overview} 
+ \subsubsection{Lab Application Overview} 
+ \label{LabOverview}
+ 
+\km{ Note: This section has been moved up from "suvery" section of paper to more appropriate "applications" section \\ }
 
 The lab that utilized the Shiny Database Sampler was designed for students to think critically about sampling approaches, then use the tool allowed to treat the large database as 
 a population from which to obtain survey data. Students were asked to consider the following pair of hypothetical situations:
@@ -273,6 +259,25 @@ a population from which to obtain survey data. Students were asked to consider t
 \hh{XXX what you describe below is called `good friction' when designing computer interfaces, because you need to intentionally slow users down sometimes, and get them to make important decisions first. I am fairly certain that there is a corresponding counter part in the educational literature. Look into literature that talks about how to get students engaged into material - that should be a similar concept to good friction.
 }
 In each scenario students were asked to discuss the choice of sampling scheme, and in particular to identify potential problems. The students used the Shiny Database Sampler tool to obtain a sample from the database containing a 1\% microsample of the 2010 U.S. Census, from which they estimated mean and median age of U.S. residents. This lab was written to ensure that sampling concepts were the primary focus, with the Shiny Database Sampler acting in a supporting role. In order to avoid (sporadic) clicking of buttons to obtain samples without ever stopping to consider why the sampling approach matters, we intentionally designed the assignment to invite students to carefully consider sampling options {\it before} using the tool. The entire lab assignment can be found in Appendix \ref{labappend}. 
+
+\km{ 
+\subsubsection{Capstone Project Application Overview} 
+\label{ProjectOverview}
+ 
+A second application of the Shiny Database Sampler was as a data source for a capstone project for two sections of the Stat 104 class, over the span of two semesters.  The project required students to define a research question that could be answered by investigating a bivariate relationship. The groups would then collect, visualize and analyze the bivariate data using what they had learned in the class. \\
+
+While the format was a formal written report, the research question and data collection format were left open ended to allow students' interests to be incorporated.  Some groups chose to conduct experiments ranging from the dull (i.e. distance of ball roll vs angle of ramp) to the interesting (i.e. resistance genes in soy plants vs aphid population growth).  Other groups chose to run surveys with friends and discuss an observed bivariate relationship in the presence of sampling bias. A number of groups chose to run a mock survey, using the databases available through the Shiny Database Sampler as surrogates for large populations. 
+
+} %end \km
+
+%%%-----------------------------------------------------------------------------------
+\subsection{Student Response Survey Following Lab Application}
+
+As discussed above, the Shiny Database Sampler was designed for student use on course assignments. We were interested to learn student opinions about using the tool. Specifically we wanted know if students find the tool easy to operate, if they see the connection to sampling concepts and if they find the data engaging. \km{These topics are selected to assess the quality of the Shiny Database Sampler with respect to the interface design and educational value.}
+\hh{slow down - here we will need about one paragraph each for the topics. Start by a more formal definition of what you mean by the topic - give a reference - and how it helps with student learning. }
+\km{\textbf{citation on HCI for why ease of use is important}.  The GAISE guidelines recommend that technological tools should be used to help teach statistical concepts and that the use of real data is important for student engagement, hence we focus on these topics \citep{GAISEcollege}. } \\
+
+Student responses were collected in an anonymous survey following the group lab assignment -- as described in Section~\ref{LabOverview} -- that required students of Stat 104, Introduction to Statistics, at Iowa State University to use the Shiny Database Sampler tool. Six sections of Stat 104 students were surveyed. The students were informed that the survey was not required and that no penalties or rewards were affiliated with its completion.  Of the 320 students attending lab, 265 completed the survey. 
 
 %-------------------------------------------------------------------------
  \subsubsection{Survey Description} 
@@ -314,6 +319,9 @@ Engagement & 1 & \it I did not enjoy working with the Census data & $-$  & \Sexp
 
 %\newpage
 From Table \ref{tab:surveyquestions} we see that all response averages are positive after reverse-scoring. With the Ease items this indicates that students tend to find the tool relatively easy to operate. For frame of reference, we assume that students are comparing the difficulty of use with other educational technologies and webpages they have encountered in the past; in particular the \texttt{JMP} software used previously on their Stat 104 labs and homework. Students also tend to respond to Concept items in a manner that is affirmative that the tool connects them to sampling concepts. Students' responses are near to neutral for most items about engagement with the census data, with the exception of Engagement item 3.  The phrasing of this question seems to have led students to reconsider their engagement level and led to a consistently more positive attitude.
+
+--
+
 
 %-------------------------------------------------------------------------
 \subsubsection{Assessment of Internal Consistency for Item Topic Sets} 
