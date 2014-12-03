@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.12)  3 DEC 2014 09:43
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.12)  3 DEC 2014 10:11
 entering extended mode
 **Chapter3ShinyApps.tex
 (C:\Users\Karsten\Documents\GitHub\Chapter3ShinyApps\Chapter3ShinyApps.tex
@@ -405,11 +405,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--134
 
  []
 
-<figure/SampleAndSummarize.png, id=18, 642.14906pt x 495.35063pt>
-File: figure/SampleAndSummarize.png Graphic file (type png)
 
-<use figure/SampleAndSummarize.png>
-Package pdftex.def Info: figure/SampleAndSummarize.png used on input line 146.
+<figure/SampleAndSummarizeWithPanelLabels.png, id=18, 642.14906pt x 495.35063pt
+>
+File: figure/SampleAndSummarizeWithPanelLabels.png Graphic file (type png)
+ <use figure/SampleAndSummarizeWithPanelLabels.png>
+Package pdftex.def Info: figure/SampleAndSummarizeWithPanelLabels.png used on i
+nput line 146.
 (pdftex.def)             Requested size: 352.31625pt x 271.77855pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 154--158
@@ -431,14 +433,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
  []
 
-<figure/Visualize.png, id=25, 642.90187pt x 400.49625pt>
+<figure/Visualize.png, id=26, 642.90187pt x 400.49625pt>
 File: figure/Visualize.png Graphic file (type png)
 
 <use figure/Visualize.png>
 Package pdftex.def Info: figure/Visualize.png used on input line 183.
 (pdftex.def)             Requested size: 465.06004pt x 289.71985pt.
  [4 <C:/Users/Karsten/Documents/GitHub/Chapter3ShinyApps/figure/SampleAndSummar
-ize.png>]
+izeWithPanelLabels.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
@@ -467,7 +469,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--339
 
 Package xcolor Warning: Incompatible color definition on input line 345.
 
-<figure/fluctuationDiagrams-1.pdf, id=42, 867.24pt x 433.62pt>
+<figure/fluctuationDiagrams-1.pdf, id=44, 867.24pt x 433.62pt>
 File: figure/fluctuationDiagrams-1.pdf Graphic file (type pdf)
 
 <use figure/fluctuationDiagrams-1.pdf>
@@ -484,7 +486,7 @@ ams-1.pdf>]
 
 Package xcolor Warning: Incompatible color definition on input line 421.
 
-<figure/OverallSetBars-1.pdf, id=55, 650.43pt x 180.675pt>
+<figure/OverallSetBars-1.pdf, id=57, 650.43pt x 180.675pt>
 File: figure/OverallSetBars-1.pdf Graphic file (type pdf)
 
 <use figure/OverallSetBars-1.pdf>
@@ -499,7 +501,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
 Package xcolor Warning: Incompatible color definition on input line 461.
 
-<figure/PCA6plot-1.pdf, id=60, 361.35pt x 361.35pt>
+<figure/PCA6plot-1.pdf, id=62, 361.35pt x 361.35pt>
 File: figure/PCA6plot-1.pdf Graphic file (type pdf)
 
 <use figure/PCA6plot-1.pdf>
@@ -617,8 +619,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 652--652
 ) ) 
 Here is how much of TeX's memory you used:
  4301 strings out of 494045
- 57034 string characters out of 3145963
- 126315 words of memory out of 3000000
+ 57109 string characters out of 3145963
+ 125315 words of memory out of 3000000
  7492 multiletter control sequences out of 15000+200000
  22060 words of font info for 63 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
@@ -648,9 +650,9 @@ pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Chapter3ShinyApps.pdf (16 pages, 415748 bytes).
+Output written on Chapter3ShinyApps.pdf (16 pages, 538195 bytes).
 PDF statistics:
- 576 PDF objects out of 1000 (max. 8388607)
+ 578 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
