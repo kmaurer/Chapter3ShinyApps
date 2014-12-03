@@ -175,10 +175,6 @@ The Shiny Database Sampler tool was constructed to provide access to data in lar
 %It should be noted that the tool is not designed for the user to directly specify a query to the database but instead, as the name implies, allow for manageable subsamples from the large data bases to be obtained and downloaded. \\  
 by allowing users to obtain and download data subsets of a more manageable size.\\
 
-\hh{The next paragraph should move somewhere to the back. Focus on the what first. The technical implementation can come later.}
-
-The Shiny Database Sampler is a JavaScript based online application created using the \texttt{shiny} package \citep{shiny} in the statistical computing language \texttt{R} \citep{R}. The Shiny package uses \texttt{R} code files to generate the graphical user interface that interacts with an \texttt{R} session running on the server.  This was used in combination with the \texttt{RMySQL} package \citep{RMySQL} to allow the \texttt{R} session on the server machine to query the database at the user's request via buttons on the graphical user interface.  \\  
-
 %\hh{the next paragraph is a bit lengthy without adding much to the content, let's comment it out for now.}
 %\km{  This section will begin by describing the design features of the Shiny Database Sampler tool, which allows users to take random samples from databases through a point-and-click online JavaScript interface.  After describing interface, examples of how the tool has been integrating into course activities will be detailed. A user experience survey was conducted following a lab activity that used the Shiny Database Sampler.  The survey results indicate that on average students found the application easy to use, found that the tool connected them to sampling concepts and felt moderately engaged with the census data that was accessed with the application. \\  }
 
@@ -195,7 +191,8 @@ The Shiny Database Sampler allows the user to randomly sample subsets from remot
 \label{fig:samplesummarizetab}
 \end{figure}
 
-\paragraph{The ``Sample and Summarize'' tab} \hfill\newline
+\subsubsection{The ``Sample and Summarize'' tab}
+%\paragraph{The ``Sample and Summarize'' tab} \hfill\newline
 
 In the ``Sample and Summarize'' tab  (see Figure~\ref{fig:samplesummarizetab})  the sidebar panel of the Shiny Database Sampler allows the user to specify a sampling plan.  At the top of the sidebar is a drop-down menu to select the database table.
 The current version allows the user to choose from three databases: 
@@ -216,8 +213,8 @@ The remaining functionality of the sidebar allows the user to download the selec
  The main panel under the ``Sample and Summarize'' tab displays a data table and a basic summary of each variable in the selected subsample.  When first accessing the webpage, a default sample is taken from the Rec Milers database and displayed until the user chooses a new sample.
  The data table is searchable, sortable and expandable which makes it easy for the user to take a quick peek at the selected variable and their values.  The basic summary statistics for each variable are also displayed in the main panel below the data table; those familiar with \texttt{R}  will quickly recognize this as the verbatim output of the \texttt{summary()} function.  The displays in the main panel of the Shiny Database Sampler are not intended for any extensive analysis of the sampled data but instead a quick check of the data that was selected. \\ 
 
-
-\paragraph{The ``Visualize'' tab} \hfill\newline
+\subsubsection{The ``Visualize'' tab}
+%\paragraph{The ``Visualize'' tab} \hfill\newline
 
 The sidebar panel under the ``Visualize'' tab (see Figure~\ref{fig:visualizetab}) allows users to select either a single response variable or a pair of variables - usually an explanatory and a response variable -  from the previously specified sample.
 
@@ -270,6 +267,15 @@ Numerical & Categorical & Side-by-side Boxplots \\
 % \item plots: specify 1 or 2 variables and variable types to generate default plot types
 % \end{itemize}
 
+
+\subsubsection{Interface Construction}
+
+\hh{The next paragraph should move somewhere to the back. Focus on the what first. The technical implementation can come later.}
+
+\km{Is this a better location to expand on the techical aspects?}
+
+The Shiny Database Sampler is a JavaScript based online application created using the \texttt{shiny} package \citep{shiny} in the statistical computing language \texttt{R} \citep{R}. The Shiny package uses \texttt{R} code files to generate the graphical user interface that interacts with an \texttt{R} session running on the server.  This was used in combination with the \texttt{RMySQL} package \citep{RMySQL} to allow the \texttt{R} session on the server machine to query the database at the user's request via buttons on the graphical user interface.  \\  
+
 \vspace{.1in}
 
 %%%-----------------------------------------------------------------------------------
@@ -302,7 +308,7 @@ In each scenario students were asked to discuss the choice of sampling scheme, a
 \label{ProjectOverview} 
 
  
-A second application of the Shiny Database Sampler was as a data source for a capstone project for three sections of the Stat 104 class.  The project required students to define a research question answerable within the framework of a bivariate relationship. The groups were then asked to collect, visualize and analyze the bivariate data. %using what they had learned in the class. \\  
+A second application of the Shiny Database Sampler was as a data source for a capstone project for three sections of the Stat 104 class.  The project required students to define a research question answerable within the framework of a bivariate relationship. The groups were then asked to collect, visualize and analyze the bivariate data.\\ %using what they had learned in the class. \\  
 
 The only formal requirement for the project was a written report, leaving 
 %While the format was a formal written report, 
