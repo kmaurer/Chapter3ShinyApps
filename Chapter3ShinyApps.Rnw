@@ -214,7 +214,7 @@ The remaining functionality of the sidebar allows the user to download the selec
 \\  
 
  The main panel under the ``Sample and Summarize'' tab displays a data table and a basic summary of each variable in the selected subsample.  When first accessing the webpage, a default sample is taken from the Rec Milers database and displayed until the user chooses a new sample.
- The data table is searchable, sortable and expandable which makes it easy for the user to take a quick peek at the selected variable and their values.  The basic summary statistics for each variable are also displayed in the main panel below the data table; those familiar with \texttt{R}  will quickly recognize this as the verbatim output of the \texttt{summary()} function.  The displays in the main panel of the Shiny Database Sampler are not intended for any extensive analysis of the sampled data but instead a quick check that the data that were sampled are what the user intended to select. \hh{XX 'intended' twice in the last sentence, get rid of one} \\ 
+ The data table is searchable, sortable and expandable which makes it easy for the user to take a quick peek at the selected variable and their values.  The basic summary statistics for each variable are also displayed in the main panel below the data table; those familiar with \texttt{R}  will quickly recognize this as the verbatim output of the \texttt{summary()} function.  The displays in the main panel of the Shiny Database Sampler are not intended for any extensive analysis of the sampled data but instead a quick check of the data that was selected. \\ 
 
 
 \paragraph{The ``Visualize'' tab} \hfill\newline
