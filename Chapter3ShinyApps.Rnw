@@ -170,14 +170,9 @@ The overarching goal is that we want to have interesting and relevant data, and 
 %-----------------------------------------------------------------------------------
 \section{Shiny Database Sampler}
 
-Exposing students to large data is tricky because after a certain size, issues with transferring, storing and accessing data become too unwieldy to be feasible with a student's personal computer.  Remote databases and database querying software puts its use outside the realm of most undergraduate statistics courses for both students and instructors.  
-The Shiny Database Sampler tool was constructed to provide access to data in large databases 
-%It should be noted that the tool is not designed for the user to directly specify a query to the database but instead, as the name implies, allow for manageable subsamples from the large data bases to be obtained and downloaded. \\  
-by allowing users to obtain and download data subsets of a more manageable size.\\
+Exposing students to large data is tricky because after a certain size, issues with transferring, storing and accessing data become too unwieldy to be feasible with a student's personal computer. Remote databases and database querying software puts its use outside the realm of most undergraduate statistics courses for both students and instructors. The Shiny Database Sampler tool was constructed to provide access to data in large databases by allowing users to obtain and download data subsets of a more manageable size.\\
 
-%\hh{the next paragraph is a bit lengthy without adding much to the content, let's comment it out for now.}
-%\km{  This section will begin by describing the design features of the Shiny Database Sampler tool, which allows users to take random samples from databases through a point-and-click online JavaScript interface.  After describing interface, examples of how the tool has been integrating into course activities will be detailed. A user experience survey was conducted following a lab activity that used the Shiny Database Sampler.  The survey results indicate that on average students found the application easy to use, found that the tool connected them to sampling concepts and felt moderately engaged with the census data that was accessed with the application. \\  }
-
+Most introductory statistics courses are focused on small sample methodology, so the Shiny Database Sampler is designed to allow students to take appropriately sized subsets from the databases to practice methodology learned in class. Working with a small static subset from the large database would let the remainder of the database go to waste. Instead the tool allows students to specify a random sampling scheme that will pull the subset from database dynamically. This is done to emphasize the role of random sampling techniques in data collection, an important concept within an introductory statistics curriculum.
 
 %%%-----------------------------------------------------------------------------------
 \subsection{Layout and Functionality}
@@ -186,7 +181,7 @@ The Shiny Database Sampler allows the user to randomly sample subsets from remot
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[keepaspectratio=TRUE,width=.75\textwidth]{figure/SampleAndSummarizeWithPanelLabels.png}
+\includegraphics[keepaspectratio=TRUE,width=.95\textwidth]{figure/SampleAndSummarizeWithPanelLabels.png}
 \caption{Shiny Database Sampler Layout for "Sample and Summarize" Tab} 
 \label{fig:samplesummarizetab}
 \end{figure}
@@ -248,35 +243,6 @@ Numerical & Categorical & Side-by-side Boxplots \\
 \caption{Default Plot Construction for the "Visualize" Tab of the Shiny Database Sampler} 
 \label{tab:defaultplottypes}
 \end{table}
-
-
-% \underline{sampling options}
-% \begin{itemize}
-% \item database: recmiler, accidents, census
-% \item type: SRS, stratified
-% \item sample size
-% \item seed: why seed available
-% \end{itemize}
-% 
-% \vspace{.1in}
-% 
-% \underline{data summaries}
-% \begin{itemize}
-% \item table: sortable, searchable
-% \item summary statistics: basic, broken down by strata if stratified sample taken
-% \item plots: specify 1 or 2 variables and variable types to generate default plot types
-% \end{itemize}
-
-
-\subsubsection{Interface Construction}
-
-\hh{The next paragraph should move somewhere to the back. Focus on the what first. The technical implementation can come later.}
-
-\km{Is this a better location to expand on the techical aspects?}
-
-The Shiny Database Sampler is a JavaScript based online application created using the \texttt{shiny} package \citep{shiny} in the statistical computing language \texttt{R} \citep{R}. The Shiny package uses \texttt{R} code files to generate the graphical user interface that interacts with an \texttt{R} session running on the server.  This was used in combination with the \texttt{RMySQL} package \citep{RMySQL} to allow the \texttt{R} session on the server machine to query the database at the user's request via buttons on the graphical user interface.  \\  
-
-\vspace{.1in}
 
 %%%-----------------------------------------------------------------------------------
 \subsection{Applications}
@@ -667,26 +633,20 @@ Table~\ref{pctable} displays the proportion of variance explained by each of the
 
 \km{ The barcharts found in Figure \ref{fig:OverallSetBars} show that the distribution for each item set is heavily skewed to the left, with the majority of students having the neutral to positive responses. The small bump at the far left of each distribution indicates that there was a small minority of students that expressed negative views. The response distributions indicate that on average students found the application easy to use, found that the tool connected them to sampling concepts and felt moderately engaged with the census data that was accessed with the application.  \\  }
 
-
-%-------------------------------------------------------------------------
-%\km{ \subsubsection{Conclusions} }
-
-
-\newpage
-
-%-----------------------------------------------------------------------------------
-\section{Shiny Database Aggregator}
-Brief intro the functionality goals for the tool
-
-
-%%%-----------------------------------------------------------------------------------
-\subsection{Layout and Functionality}
-To be determined
-
-%%%-----------------------------------------------------------------------------------
-\subsection{Applications}
-To be determined
-
+% 
+% %-----------------------------------------------------------------------------------
+% \section{Shiny Database Aggregator}
+% Brief intro the functionality goals for the tool
+% 
+% 
+% %%%-----------------------------------------------------------------------------------
+% \subsection{Layout and Functionality}
+% To be determined
+% 
+% %%%-----------------------------------------------------------------------------------
+% \subsection{Applications}
+% To be determined
+% 
 
 
 %-----------------------------------------------------------------------------------
@@ -751,6 +711,13 @@ You will notice that the summaries are all broken down by state, but the states 
 \item	Making comparisons as we have done above would become tedious if we wanted to compare ages between all pairs of states in the country.  What would be a good way to visually display this information so aid in making these comparisons? Explain your answer.
 \end{enumerate}
 
+%------------------------------------------------------------------
+\section{Appendix: Technical Implimentation of Shiny Application}
+\label{appendConstruction}
+
+\textbf{Construction schematics and description of sampling process and plotting process.}
+
+The Shiny Database Sampler is a JavaScript based online application created using the \texttt{shiny} package \citep{shiny} in the statistical computing language \texttt{R} \citep{R}. The Shiny package uses \texttt{R} code files to generate the graphical user interface that interacts with an \texttt{R} session running on the server.  This was used in combination with the \texttt{RMySQL} package \citep{RMySQL} to allow the \texttt{R} session on the server machine to query the database at the user's request via buttons on the graphical user interface.  \\  
 
 %------------------------------------------------------------------
 \section{Appendix: Database Descriptions}
@@ -761,8 +728,6 @@ You will notice that the summaries are all broken down by state, but the states 
 %------------------------------------------------------------------
 \section{Appendix: Cronbach's $\alpha$ Properties}
 \label{appendCronbach}
-
-\km{
 
 Recall the form of Cronbach's $\alpha$ from equation~(\ref{eq:alpha}):\\
 
@@ -804,7 +769,5 @@ $\Rightarrow$  $\alpha = \left(K/(K-1)\right) \left( 1- \sum_{i=1}^K \V{Y_i} \ri
 $\Rightarrow$  $\V{Y_1 + Y_2}$ = $\V{Y_1 - Y_1}$ = $\V{0}$ = $0$
 
 $\Rightarrow$  $\alpha = \left(K/(K-1)\right) \left( 1- \sum_{i=1}^K \V{Y_i} \right.\left/  \V{\sum_{j=1}^K Y_j}  \right)$ = $(2/1)(1-2\sigma^2_y/0)$ = $-\infty$ \\
-
-} %end km
 
 \end{document}
