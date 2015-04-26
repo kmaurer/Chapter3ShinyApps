@@ -177,9 +177,9 @@ Most introductory statistics courses are focused on small sample methodology, so
 %%%-----------------------------------------------------------------------------------
 \subsection{Layout and Functionality}
 
-The Shiny Database Sampler allows the user to randomly sample subsets from remotely stored SQL databases using a point-and-click graphical user interface. The tool is available online through the link at \url{http://shiny.stat.iastate.edu/karstenm/ShinyDatabaseSampler/}.  A screenshot of the graphical user interface is shown in Figure~\ref{fig:samplesummarizetab} \hh{ It would be good to highlight the main panel and side panel by putting frames in the appropriate places. I would suggest to use Figure 1 for that.} \km{Does this change to the figure help?}.  The interface consists of two sections: a main panel and a sidebar panel. The main panel is for displaying information while the side panel allows the user to pick from  a set of  options. The exact details of the panels depend on which tab of the application is selected. %; however these sections contain different options and displays depending on which tab of the application is selected.\\  
+The Shiny Database Sampler allows the user to randomly sample subsets from remotely stored SQL databases using a point-and-click graphical user interface. The tool is available online through the link at \url{http://shiny.stat.iastate.edu/karstenm/ShinyDatabaseSampler/}. A screenshot of the graphical user interface is shown in Figure~\ref{fig:samplesummarizetab}. The interface consists of two sections: a main panel and a sidebar panel. The main panel is for displaying information while the side panel allows the user to pick from  a set of  options. The exact details of the panels depend on which tab of the application is selected. %; however these sections contain different options and displays depending on which tab of the application is selected.\\  
 
-\begin{figure}[htbp]
+\begin{figure}[h]
 \centering
 \includegraphics[keepaspectratio=TRUE,width=.95\textwidth]{figure/SampleAndSummarizeWithPanelLabels.png}
 \caption{Shiny Database Sampler Layout for "Sample and Summarize" Tab} 
@@ -189,32 +189,25 @@ The Shiny Database Sampler allows the user to randomly sample subsets from remot
 \subsubsection{The ``Sample and Summarize'' tab}
 %\paragraph{The ``Sample and Summarize'' tab} \hfill\newline
 
-In the ``Sample and Summarize'' tab  (see Figure~\ref{fig:samplesummarizetab})  the sidebar panel of the Shiny Database Sampler allows the user to specify a sampling plan.  At the top of the sidebar is a drop-down menu to select the database table.
-The current version allows the user to choose from three databases: 
-\hh{I would not feature the Recmiler data in such a prominent position. We do not know whether this data was collected with IRB approval. If not we will not be allowed to use it for publication.  }
- workout data from an Iowa State fitness club called the RecMilers \url{www.recservices.iastate.edu/fitness/recmilers}, the 2001-2009 Fatality Analysis Recording System accident data from the National Highway Traffic Safety Administration \url{www.nhtsa.gov/FARS} and the Public Use Micro Sample data from the 2000 United States Census \url{www.census.gov/}.  More information about the variables and cases for the "RecMiler", "Accident" and "Census" databases can be found in Appendix~\ref{appendDB}. \\  
+A screenshot of the interface for the \textit{Sample and Summarize} tab, the is shown in Figure~\ref{fig:samplesummarizetab} below.  A sidebar panel which contains all the sampling options and controls and a main panel which contains the data table and brief summary of the sampled data set.\\
 
+The sidebar panel contains several fields and buttons for selecting and executing a sampling plan.  At the top of the sidebar is a drop-down menu to select the database table from which the user wants to take a random subset.  The current version of the tool allows users to access workout data from an Iowa State fitness club called the RecMilers (\url{www.recservices.iastate.edu/fitness/recmilers}), the 2001-2009 Fatality Analysis Recording System accident data from the National Highway Traffic Safety Administration (\url{www.nhtsa.gov/FARS}) and the Public Use Micro Sample data from the 2000 United States Census (\url{www.census.gov/}).\\ 
 
-After choosing the database, 
-the user decides between a simple and a stratified random subsample from the database. 
-For the simple random sample the user only has to additionally specify a sample size;
-for a stratified random sample the strata variable and number of samples per stratum need to be selected.  
-Once the sampling scheme is fully specified, the user may click the ``Get My Sample!'' button and the subsample of the database will be obtained and displayed in the main panel of the interface.  
+\km{Further description of databases to go here.}\\
 
+After selecting the database, the user can choose between taking a simple or stratified random subsample of data from the database. If the user chooses simple random sampling then must specify a sample size; whereas if the user chooses stratified random sampling the strata variable and number of samples per stratum need to be specified. Lastly the user sets the seed for the selection algorithm. Setting the seed may seem to contradict the intention to draw random subsets, however it is included after careful consideration. For classroom settings, it is often desirable that students work with identical data sets for consistency of class discussion and grading, which setting the same seed and the same sampling specifications will accomplish. Obtaining a random sample from the databases is still possible with the additional -- but fairly trivial -- step of first randomly generating a starting seed. \\
 
-The remaining functionality of the sidebar allows the user to download the selected subsample (as comma separated value file)  to the default download folder on a local drive  on the user's computer. \hh{this is not the most elegant solution - it'd be pretty easy to change this to a user specified path.}
-\\  
+Once the sampling setup is specified, the user may click the ``Get My Sample!" button and the randomly selected subsample of the database will be obtained and displayed in the main panel of the interface. Note that the interface only keeps track of the more recently selected subsample, which we will refer to as the \textit{active data}. Lastly, the side panel contains the button to download the selected subsample to a local drive on the user's computer.  The data will be downloaded as comma separated values (csv) file to the default download folder on the user's computer.\\
 
- The main panel under the ``Sample and Summarize'' tab displays a data table and a basic summary of each variable in the selected subsample.  When first accessing the webpage, a default sample is taken from the Rec Milers database and displayed until the user chooses a new sample.
- The data table is searchable, sortable and expandable which makes it easy for the user to take a quick peek at the selected variable and their values.  The basic summary statistics for each variable are also displayed in the main panel below the data table; those familiar with \texttt{R}  will quickly recognize this as the verbatim output of the \texttt{summary()} function.  The displays in the main panel of the Shiny Database Sampler are not intended for any extensive analysis of the sampled data but instead a quick check of the data that was selected. \\ 
+The main panel of the Shiny Database Sampler interface displays a data table and a basic summary of each variable in the active data. When logging into the webpage a default sample is taken and displayed until a sample of the users choosing is selected. The data table is searchable, sortable and expandable which makes it easy for the user to take a quick peek at the variable names and values that have been selected. The basic summary statistics for each variable are also displayed in the main panel below the data table; those familiar with \textit{R} programming will quickly recognize this as the verbatim output of the \textit{summary} function in \textit{R}. In the case that stratified sampling was used to draw the data, the summary for each variable is broken down by strata. The displays in the main panel of the Shiny Database Sampler are not intended to be the location for any extensive analysis of the active data but instead a quick check that the data that were sampled are what the user intended to select. \\
+
 
 \subsubsection{The ``Visualize'' tab}
 %\paragraph{The ``Visualize'' tab} \hfill\newline
 
-The sidebar panel under the ``Visualize'' tab (see Figure~\ref{fig:visualizetab}) allows users to select either a single response variable or a pair of variables - usually an explanatory and a response variable -  from the previously specified sample.
+The \textit{Visualize} tab of the interface is designed to construct basic plots of the active data drawn in the \textit{Sample and Summarize} tab. Figure~\ref{fig:visualizetab} shows a screenshot of the layout of the \textit{Visualize} tab. The sidebar panel contains fields for specifying variables and variable types that will be plotted. Univariate plots can be created by selecting the response variable from a drop-down menu containing a list of all variables and the variable type. Plots may also display bivariate relationships by additionally selecting an explanatory variable and it's variable type. The variable can be specified as numerical or categorical, causing the default plotting to generate a histogram or barchart, respectively. Variable types are not automatically specified for variables in the database for the deliberate purpose of forcing student users to consider appropriate ways to display the data.\\
 
-\hh{XX 'tool' is not the right word here - also, the person interacting is not necessarily a 'student'. XX check the rest of the paragraph as well}
-The tool requires the student to define variables as either numerical or categorical.  The main panel then displays a plot that matches the user's specification.  By application constructs a plot based on the variable type specified for the response and explanatory variables, and displays the plot in the main panel. The plot types supported by the application are listed in Table~\ref{tab:defaultplottypes}. \\   
+Once the plotting options are selected in the sidebar panel, the user may click the ``Make my Plot!" button to generate and display the plot in the main panel. Table~\ref{tab:defaultplottypes} shows the possible plot types that are created based on the options selected. Since the visualization are intended only for preliminary exploration, the plots have a default construction and labeling that are not able to be customized. \\ 
 
 \begin{figure}[htbp]
 \begin{center}
@@ -224,12 +217,9 @@ The tool requires the student to define variables as either numerical or categor
 \label{fig:visualizetab}
 \end{figure}
 
-
-
 \begin{table}[H]
 \centering
 \begin{tabular}{lll}
-\hline 
 Response Variable & Explanatory Variable & Default Plot \\
 \hline
 Numerical & None & Histogram \\
@@ -237,10 +227,8 @@ Categorical & None & Barchart \\
 Numerical & Numerical & Scatterplot \\
 Categorical & Categorical & Stacked Barchart \\
 Numerical & Categorical & Side-by-side Boxplots \\
-
-\hline
 \end{tabular}
-\caption{Default Plot Construction for the "Visualize" Tab of the Shiny Database Sampler} 
+\caption{Plot types supported in \textit{Visualize} tab.} 
 \label{tab:defaultplottypes}
 \end{table}
 
@@ -248,13 +236,11 @@ Numerical & Categorical & Side-by-side Boxplots \\
 \subsection{Applications}
 \label{Applications}
 
-The Shiny Database Sampler was designed for application in the introductory statistics classroom.  The tool has been used in introductory statistics courses at Iowa State University to support a lab assignment on random sampling and also as data source for a capstone project. The following subsection provide an overview of these applications.
+The Shiny Database Sampler was developed for applications in statistics education and was implemented in the initial stages of development within the curriculum of an introductory statistics course. The alpha version of the software was used within one section of Statistics 104: \textit{Introduction to Statistics} for a group lab assignment and a course project. Later, a beta version was extended to be used in the lab assignment for more sections of the same course. These two applications demonstrate possible uses of the Shiny Database Sampler. 
 
 %-------------------------------------------------------------------------
  \subsubsection{Lab Application Overview} 
  \label{LabOverview}
- 
-\km{ Note: This section has been moved up from "survey" section of paper to more appropriate "applications" section \\ }
 
 The lab that utilized the Shiny Database Sampler was designed for students to think critically about sampling approaches, then use the tool allowed to treat the large database as 
 a population from which to obtain survey data. Students were asked to consider the following pair of hypothetical situations:
@@ -273,17 +259,10 @@ In each scenario students were asked to discuss the choice of sampling scheme, a
 \subsubsection{Capstone Project Application Overview} 
 \label{ProjectOverview} 
 
+A second application of the Shiny Database Sampler was as a data source for a capstone project for three sections of the Stat 104 class. Students were required to do work in small groups to complete a capstone project that took a statistical approach to answering a question of their choosing. Groups were allowed to pick their own data source in order to accomodate students' interests in the subject matter of project. The only specific requirement for the project was a written report that explained the collection of bivariate data and an analysis of the association -- included the appropriate plots, inference and interpretations to answer their question of interest.\\ 
+
+Six groups chose to run a mock survey, using the databases available through the Shiny Database Sampler as a stand-in for a large population. These groups were required to demonstrate a strong arguement for the sampling plan they used within the Shiny Database Sample. For instance, one group wanted to know if the proportion of fatal accidents involving a drunk driver was higher in California than in Iowa; as part of the report they needed to argue why taking a stratified random sample of 100 fatal accidents per state would produce better information to answer their question than a simple random sample. Groups that gathered random samples from the Census and Accidents databases knew that they had gathered information from real life sources and they seemed genuinely engaged in the results of their projects. \\
  
-A second application of the Shiny Database Sampler was as a data source for a capstone project for three sections of the Stat 104 class.  The project required students to define a research question answerable within the framework of a bivariate relationship. The groups were then asked to collect, visualize and analyze the bivariate data.\\ %using what they had learned in the class. \\  
-
-The only formal requirement for the project was a written report, leaving 
-%While the format was a formal written report, 
-the research question and data collection open ended to encourage students' interests to be incorporated.  
-%Some groups chose to conduct experiments ranging from the dull (i.e. distance of ball roll vs angle of ramp) to the interesting (i.e. resistance genes in soy plants vs aphid population growth).  Other groups chose to run surveys with friends and discuss an observed bivariate relationship in the presence of sampling bias. 
-Six groups chose to run a mock survey, using the databases available through the Shiny Database Sampler as a stand-in for a large population.  %An example of a project using the Shiny Database Sample is a 
-One group investigated  the association between the day of the week and the number of drunk drivers involved in fatal car crashes through a sample from the Accidents database.  \\ 
-
-
 %%%-----------------------------------------------------------------------------------
 \subsection{Student Response Survey Following Lab Application}
 
