@@ -141,23 +141,24 @@ As the availability of truly massive data sets proliferates it is enticing to in
 
 \section{Introduction}
 
-\km{This is the intro section from the ICOTS paper, needs to be expanded}\\
+Statistics education has been rapidly evolving in the past decade with respect to undergraduate course curriculum and assessment. Technology has played the role as a catalyst for many of these major changes.  An important change involves how data is accessed and analyzed in the classroom.   The GAISE report \citep{GAISEcollege} laid out six recommendations on how to improve the teaching of introductory statistics; two of which urge statistics instructors to ``Use technology for developing conceptual understanding and analyzing data'' and to ``Use real data''.   There are many software tools and online repositories for instructors to access real data for use in the statistics classroom; such as the Data and Story Library \citep[DASL, ][]{DASL} and its Australian counterpart, OzDASL \citep{OzDASL}, the Data Archives of the Journal of Statistics Education \citep{JSErepo}, CAUSE Web Repository \citep{CAUSErepo}  and Many Eyes \citep{ManyEyes}. These technological tools are wonderful for accessing many real data sets but the majority of the data sets currently available are quite small in scale.\\
 
-Statistics education has been rapidly evolving in the past decade with respect to undergraduate course curriculum and assessment. Technology has played the role as a catalyst for many of these major changes.  An important change involves how data is accessed and analyzed in the classroom.   The GAISE report \citep{GAISEcollege} laid out six recommendations on how to improve the teaching of introductory statistics; two of which urge statistics instructors to ``Use technology for developing conceptual understanding and analyzing data'' and to ``Use real data''.   There are many software tools and online repositories for instructors to access real data for use in the statistics classroom; such as the Data and Story Library \citep[DASL, ][]{DASL} and its Australian counterpart, OzDASL \citep{OzDASL}, the Data Archives of the Journal of Statistics Education \citep{JSErepo}, CAUSE Web Repository \citep{CAUSErepo}  and Many Eyes \citep{ManyEyes}. \hh{you need to expand on these section - there's quite a bit more in your lit review}  These technological tools are wonderful for accessing many real data sets but the majority of the data sets currently available are quite small in scale.\\
+\citet[][p.~1]{Finzer2007} argue that in an introductory level statistics curriculum ``(w)hat seems to us to be missing are data sets-especially large and highly multivariate data sets-that are ripe for exploration and conjecture driven by the students' intrigue, puzzlement and desire for discovery''. Large, real data sources are becoming increasingly available, but tend to be less easily accessible. A major contributor to this trend is the Freedom of Information Act which to ensures that non-classified data from the United States Government is publicly available \citep{FOIA}.  The online government resources at \url{www.data.gov/} \citep{DataGov}, \url{www.census.gov/} \citep{Census}, \url{www.nhtsa.gov/} \citep{NHTSA} and \url{www.cdc.gov/} \citep{CDC} are all locations of massive data stores. Governmental datasets contain rich information related to many societally relevant issues, making them prime candidates for engaging student interest.\\
 
-\hh{I think the GOLD book would be better than the reference to the Italian journal} In his paper on graphics for large data,  \citet[][p.~129]{Unwin1999} states that ``(t)he definition of large in relation to data is always changing. A data set that required substantial high performance computing one year becomes easily analyzable on a laptop a few years later''. What constitutes ``small data'' or ``big data'' is constantly being redefined in the field of statistics as computation allows us to collect, store and manipulate larger and larger data sets, but what is consistent is the desire to be able to analyze big data. 
+The goal of connecting undergraduate statistics students with big data sources requires careful consideration to implement.  \citet{jacobs2009} speaks of the difficulties associated with using, "data whose size forces us to look beyond the tried-and-true methods that are prevalent at that time", including scaling computing tasks, avoiding costs of sub-optimal storage schemes and parallel processing.
 
-\hh{Include a few data taxonomies here - there is an early one by Huber, \\
-then one by Wegman: Huge Data Sets and the Frontiers of Computational Feasibility
-Edward J. Wegman
-Journal of Computational and Graphical Statistics
-Vol. 4, No. 4 (Dec., 1995), pp. 281-295\\
-I am sure that there are more recent ones. Include them in a table to show how quickly things are changing wrt the size of data.\\
-The overarching goal is that we want to have interesting and relevant data, and that means that it can't be a toy data set.
-}
+New data technologies are needed in order to allow introductory statistics students to interact with big data sources, such as the governmental databases. This paper discusses the construction and functionality of the Shiny Database Sampler; a web-based application that allows students to pull random samples from large databases. Then uses of the application within a lab assignment and course project for an introductory statistics course are detailed.  Lastly the responses from a technology user survey of the Shiny Database Sampler from 265 students of an introductory statistics course are analyzed and discussed. \\
 
-
-\citet[][p.~1]{Finzer2007} argue that in an introductory level statistics curriculum ``(w)hat seems to us to be missing are data sets-especially large and highly multivariate data sets-that are ripe for exploration and conjecture driven by the students' intrigue, puzzlement and desire for discovery''.\\
+% \hh{I think the GOLD book would be better than the reference to the Italian journal} In his paper on graphics for large data,  \citet[][p.~129]{Unwin1999} states that ``(t)he definition of large in relation to data is always changing. A data set that required substantial high performance computing one year becomes easily analyzable on a laptop a few years later''. What constitutes ``small data'' or ``big data'' is constantly being redefined in the field of statistics as computation allows us to collect, store and manipulate larger and larger data sets, but what is consistent is the desire to be able to analyze big data. 
+% 
+% \hh{Include a few data taxonomies here - there is an early one by Huber, \\
+% then one by Wegman: Huge Data Sets and the Frontiers of Computational Feasibility
+% Edward J. Wegman
+% Journal of Computational and Graphical Statistics
+% Vol. 4, No. 4 (Dec., 1995), pp. 281-295\\
+% I am sure that there are more recent ones. Include them in a table to show how quickly things are changing wrt the size of data.\\
+% The overarching goal is that we want to have interesting and relevant data, and that means that it can't be a toy data set.
+% }
 
 \hh{general outline of the intro should be something like
 \begin{itemize}
